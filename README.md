@@ -58,84 +58,94 @@ edit: true
 
 # Designed but Not Used?
 
-<h2>Feature-Adoption in einem System ohne Telemetrie</h2>
-
-<h4>Sebastian Zug, André Dietrich, Ines Aubel, Martin Lommatzsch, Volker Göhler</h4>
-
-<h4>TU Bergakademie Freiberg · Geschwister-Scholl-Gymnasium Freiberg</h4>
+<h2>A Feature Adoption Analysis of LiaScript Courses</h2>
 
 <div class="cols">
 <div>
 
 > __DELFI 2026 — Die 24. Fachtagung Bildungstechnologien__
 >
-> __September 2026__
+> __Potsdam, September 2026__
 
-Dieser Foliensatz steht unter einer Creative-Commons-Lizenz (CC BY 4.0). Der Quelltext liegt auf [GitHub](https://github.com/LiaPlayground/DELFI_2026_presentation).
 
 </div>
 <div>
 
-![Kumulierte Kurse und Autoren 2017–2026](img/growth.png "Wachstum der LiaScript-Community 2017–2026")
+> **Sebastian Zug$^1$, André Dietrich$^1$, Ines Aubel$^1$, Martin Lommatzsch$^2$, Volker Göhler$^1$**
+>
+> **$^1$TU Bergakademie Freiberg, $^2$Geschwister-Scholl-Gymnasium Freiberg**
+
+
+</div>
+</div>
+
+<div class="cols">
+<div>
+
+Das zugehörige Paper finden Sie in der Digitalen Bibliothek der GI unter [Link](https://dl.gi.de/items/4da2a537-6a46-4f90-9276-618d41e8409b)
+
+![](img/DELFI_Screenshot.png)<!-- style="height:250px" -->
+
+</div>
+<div>
+
+Dieser Vortrag ist unter folgenden [Link](https://liascript.github.io/course/?https://raw.githubusercontent.com/LiaPlayground/DELFI_2026_presentation/main/README.md) zu finden.
+
+[qr-code](https://liascript.github.io/course/?https://raw.githubusercontent.com/LiaPlayground/DELFI_2026_presentation/main/README.md)
 
 </div>
 </div>
 
 ---
 
---{{0}}--
-Herzlich willkommen. Wir haben ein Werkzeug gebaut, das bewusst keine Daten
-über seine Nutzung sammelt — und stehen damit vor einem Problem: Wir wissen
-nicht, was die Leute damit tun. In den nächsten zwanzig Minuten zeige ich
-Ihnen, wie wir das trotzdem herausgefunden haben, und was dabei für unsere
-eigenen Workshops herauskam.
-
-## Was Sie hier gerade sehen
-
-> [!IMPORTANT]
-> **Dieser Vortrag ist selbst ein LiaScript-Dokument und damit eine Textdatei.**
-
-Eine einzige Markdown-Datei, die in Ihrem Browser gerendert wird. Kein Server,
-keine Installation, kein Konto.
+Dieser Foliensatz steht unter einer Creative-Commons-Lizenz (CC BY 4.0). Der Quelltext liegt auf [GitHub](https://github.com/LiaPlayground/DELFI_2026_presentation).
 
 --{{0}}--
-Was Sie gerade sehen, ist selbst ein LiaScript-Kurs — genau das Werkzeug, über
-das wir gleich sprechen. Keine Präsentationssoftware, sondern eine Textdatei,
-die Ihr Browser darstellt.
+Herzlich willkommen. Diese Annotationen fassen die Erläuterungen im Zusammenhang mit der Vorstellung des Papers anlässlich der DELFI 2026 zusammen. Ausgehend vom 
 
-# Teil 1 — LiaScript
+# Was ist LiaScript?
 
-> [!IMPORTANT]
+> [!TIP]
 > **LiaScript ist Markdown — erweitert um genau die Elemente, die für
-> interaktive Lehre fehlen.**
+> interaktive Lehre fehlen. Dabei bleibt alles ein Text - den man beliebig verändern und kompieren kann.**
 
 --{{0}}--
 Zunächst kurz: Was ist LiaScript überhaupt? Für alle, die es noch nicht kennen.
 
-## Ein Kurs ist ein Text
+````markdown @embed.style(height: 520px; min-width: 100%; border: 1px black solid)
+<!--
+import: https://raw.githubusercontent.com/liaTemplates/ABCjs/main/README.md
+-->
+# TU Bergakademie Freiberg
 
-> __Alles wird als reiner Text geschrieben. Probieren Sie es aus — links
-> ändern, rechts zusehen.__
+**Standard Markdown**
 
-```markdown @embed.style(height: 520px; min-width: 100%; border: 1px black solid)
-# Sortierverfahren
+Die Bergakademie wurde **1765** gegründet und ist damit die älteste noch bestehende ~~Montanuniversität~~.
 
-Ein Verfahren ist **effizient**, wenn es mit wachsender Datenmenge
-nicht ~~überproportional~~ langsamer wird.
+**Quizz**
 
-Bubble Sort benötigt $\mathcal{O}(n^2)$ Vergleiche.
+Welches Element wurde in Freiberg entdeckt?
 
-| Verfahren   | Vergleiche              | stabil |
-| ----------- |:-----------------------:| ------:|
-| Bubble Sort | $\mathcal{O}(n^2)$      | ja     |
-| Merge Sort  | $\mathcal{O}(n \log n)$ | ja     |
+[[ (Germanium|Indium) ]]
 
-Welches Verfahren ist **nicht** stabil?
+**Interaktion**
 
-[( )] Bubble Sort
-[(X)] Quick Sort
-[( )] Merge Sort
+``` abc
+X:353
+T: GLUECK AUF DER STEIGER KOEMMT
+N: E1512
+O: Europa, Mitteleuropa, Deutschland
+R: Staende -, Bergmanns - Lied
+M: 4/4
+L: 1/16
+K: G
+| G8F4A4 | G8z8 | B8A4c4 | B8z4G2A2 | B4B4B4A2B2 | c4A3AA4
+A2B2 | c4c4c4B2c2 | d4B3BB4A4 | G8F8 | G4e4d4c2A2 | B8A8 | G8z8
 ```
+@ABCJS.eval
+
+??[Familienschacht Freiberg](https://sketchfab.com/3d-models/familienschacht-freiberg-germany-7c7d30506c554385a4a4321366e2e601 "Quelle: sketchfab.com")
+````
 
 --{{0}}--
 Links der Quelltext, rechts das Ergebnis. Formatierung, Mathematik, Tabellen
@@ -143,6 +153,9 @@ und Quizze — alles in einer Textdatei, alles sofort im Browser. Genau diese
 Bausteine sind es, deren Nutzung wir später vermessen.
 
 ## Sovereignty by Design
+
+> [!IMPORTANT]
+> LiaScript Dokumente werden im Browser interpretiert - die Ausführungsumgebung läuft lokal. 
 
 <div class="cols">
 <div>
@@ -154,7 +167,7 @@ Bausteine sind es, deren Nutzung wir später vermessen.
 </div>
 <div>
 
-> __Autor:innen behalten die volle Kontrolle über ihre Inhalte.__
+> __Autor:innen behalten die volle Kontrolle über ihre Inhalte bzw. teilen diese sehr einfach.__
 >
 > Wir wissen dafür **nicht**, wie LiaScript verwendet wird.
 
@@ -166,97 +179,82 @@ Das ist eine bewusste Designentscheidung: keine Server, keine Konten, keine
 Telemetrie. Für offene Bildungsressourcen ist das genau richtig. Aber es hat
 einen Preis — und der ist der Ausgangspunkt dieses Papers.
 
-## Die Community wächst
+## Die Community wächst ...
 
 ![Kumulierte Kurse und Autoren 2017–2026](img/growth.png)
 
 <div class="bigfact">
-<div class="num">293</div>
-<div class="cap">Autor:innen · 5.042 Kurse (Stand August 2026)</div>
+<div class="num">5.042</div>
+<div class="cap">Kurse in 293 Repository-Accounts · Stand August 2026</div>
 </div>
 
---{{0}}--
-Und es wird benutzt. Seit 2017 wächst die Zahl der Kurse und Autorinnen
-exponentiell. Inzwischen sind es fast dreihundert unabhängige Autor:innen.
-Das ist keine Werkzeugnutzung mehr, das ist eine Community.
+> __... und damit die Nachfrage nach Tutorials und Workshops.__
 
-     {{1}}
-> Die blaue Fläche ist **ein einziges Projekt**. Merken Sie sich das.
-
---{{1}}--
-Eine Sache fällt auf: Diese blaue Fläche ab 2025 ist kein Community-Wachstum,
-sondern ein einzelnes Projekt mit über tausend Kursen. Merken Sie sich das,
-wir kommen darauf zurück.
-
-# Teil 2 — Das Problem
+# Das Problem
 
 > [!IMPORTANT]
-> **Wir bauen Workshops und Tutorials. Für wen eigentlich?**
+> **Wer ist eigentlich die Zielgruppe und welche Feature sollten dort fokussiert werden?**
 
---{{0}}--
-Jetzt zum eigentlichen Problem — und das ist kein LiaScript-Problem, sondern
-eines, das viele von Ihnen kennen dürften.
+<details>
+<summary>Sachkundeunterricht Klasse 4 - Adrian Nemetschek - ([Link zum Material](https://github.com/aua-einiges/LiaScript_Sachunterricht_Lernbereich3/blob/main/DL_Sachunterricht1_Nem%20(1).md)</summary>
 
-## Entscheidungen ohne Datengrundlage
+<iframe
+  src="https://liascript.github.io/course/?https://raw.githubusercontent.com/aua-einiges/LiaScript_Sachunterricht_Lernbereich3/main/DL_Sachunterricht1_Nem%20(1).md#3"
+  style="width:100%; height:80vh; border:1px solid #ccc"
+  allowfullscreen>
+</iframe>
 
-Wir führen regelmäßig Workshops durch — und entscheiden dabei laufend:
+</details>
 
-     {{0}}
-- Welche Features zeigen wir zuerst?
-- Was lassen wir weg?
-- Wo hakt es in der Praxis?
+<details>
+<summary>Fonts Template für wissenschaftliche Community - André Dietrich - ([Link zum Material](https://liascript.github.io/course/?https://raw.githubusercontent.com/LiaPlayground/Fonts/main/README.md#6))</summary>
 
-     {{1}}
-> [!WARNING]
-> **Bisher: Bauchgefühl.**
+<iframe
+  src="https://liascript.github.io/course/?https://raw.githubusercontent.com/LiaPlayground/Fonts/main/README.md#2"
+  style="width:100%; height:80vh; border:1px solid #ccc"
+  allowfullscreen>
+</iframe>
 
---{{0}}--
-Bei jedem Workshop stellt sich dieselbe Frage: Womit fangen wir an? Was ist
-wichtig, was können wir weglassen? Und ehrlicherweise haben wir das bisher
-nach Gefühl entschieden.
+</details>
 
---{{1}}--
-Wir hatten schlicht keine Grundlage für diese Entscheidungen.
+> [!TIP]
+> __Die Vermutung, dass unterschiedliche Anwendungskontexte eine verschiedene Nutzungsmuster zeigen ist offensichtlich, aber wie können wir das nachweisen?__
 
-## Eine Frage an Sie
-
-<div class="bigfact">
-<div class="cap">Wer von Ihnen entwickelt Lehrmaterial oder Werkzeuge,<br>
-<b>ohne</b> zu wissen, wie sie tatsächlich genutzt werden?</div>
-</div>
-
-     {{1}}
-> [!NOTE]
-> Genau dieses Problem haben dezentrale, datensparsame Systeme —
-> strukturell und dauerhaft.
-
---{{0}}--
-Kurze Frage in die Runde — und ich vermute, es gehen einige Hände hoch.
-
---{{1}}--
-Das ist der Punkt: Datensparsamkeit und Wissen über die eigene Nutzerschaft
-stehen in einem echten Zielkonflikt. Wer das eine will, verliert das andere.
-
-# Teil 3 — Methodik
+# Methodik der Analyse
 
 > [!IMPORTANT]
-> **Kurse liegen in öffentlichen Repositories. Das ist der einzige Kanal,
-> über den wir Nutzung beobachten können.**
+> **Kurse liegen in öffentlichen Repositories. Das ist der einzige Kanal, über den wir Nutzung beobachten können.**
 
---{{0}}--
-Unser Ausweg: Wenn wir die Nutzung nicht messen können, schauen wir uns an,
-was die Leute veröffentlichen.
+<details>
+
+<summary>LiaScript Gehversuche - Irina Feldbrügge - ([Link zum Material](https://liascript.github.io/course/?https://raw.githubusercontent.com/LiaPlayground/Fonts/main/README.md#6))</summary>
+
+<iframe
+  src="https://liascript.github.io/course/?https://raw.githubusercontent.com/IRFE2023/LIASCRIPT/refs/heads/main/warum.md#1"
+  style="width:100%; height:80vh; border:1px solid #ccc"
+  allowfullscreen>
+</iframe>
+
+</details>
+
+> [!TIP]
+> Die manuelle Erfassung der Rückmeldungen der Nutzenden ist offenbar kein geeignetes Vorgehensmodell.
 
 ## Der Korpus
 
 <div class="cols">
 <div>
 
+<!-- data-type="none" -->
 | | |
 |---|---|
 | Validierte Kurse | **3.317** |
-| Autor:innen | **314** |
-| Stand | März 2026 |
+| Committer | **314** |
+| Repository-Accounts | **205** |
+| Stand | **März 2026** |
+
+*Die Analyse nutzt den Stand von März 2026 — der Korpus ist seither
+weiter gewachsen.*
 
 </div>
 <div>
@@ -279,6 +277,50 @@ Wir haben gut dreitausend validierte Kurse von GitHub eingesammelt und jeden
 daraufhin untersucht, welche der vierundvierzig LiaScript-Features darin
 vorkommen. Eine wichtige Einschränkung gleich vorweg: Wir sehen, was
 Autor:innen einbauen — nicht, was Lernende davon tatsächlich nutzen.
+
+## Die Verarbeitungskette
+
+```mermaid
+graph LR
+  A["Repository-Suche<br/>GitHub Search API<br/><b>1.076 Repos</b>"]
+  B["Datei-Extraktion<br/>Tree API + Heuristik<br/><b>57.096 Dateien</b>"]
+  C["Validierung<br/>Regeln + LLM<br/><b>3.317 Kurse</b><br/><i>5,8 % der Dateien</i>"]
+  D["Header-Metadaten<br/><b>99,4 % Abdeckung</b>"]
+  E["Feature-Erkennung<br/><b>44 Regex-Muster</b>"]
+  F["KI-Klassifikation<br/>llama3.3:70b<br/><b>Bildungsstufe</b>"]
+  G["Konsolidierung<br/><b>2.973 Kurse</b>"]
+
+  A --> B --> C
+  C --> D --> G
+  C --> E --> G
+  C --> F --> G
+
+  style A fill:#e3f0fa,stroke:#2E86AB
+  style B fill:#e3f0fa,stroke:#2E86AB
+  style C fill:#fdf0e0,stroke:#F18F01
+  style D fill:#e6f5f2,stroke:#1ABC9C
+  style E fill:#e6f5f2,stroke:#1ABC9C
+  style F fill:#f0e9f7,stroke:#9B59B6
+  style G fill:#eeeeee,stroke:#333
+```
+
+     {{1}}
+> [!NOTE]
+> Von **57.096 Dateien** bleiben **3.317 Kurse** — und für den
+> Gruppenvergleich **2.973** mit eindeutiger Bildungsstufe.
+
+--{{0}}--
+Wie kommen wir zu diesen Zahlen? Wir starten mit einer Repository-Suche über
+die GitHub-API und ziehen daraus alle Markdown-Dateien — siebenundfünfzigtausend
+Kandidaten. Die Validierung ist der entscheidende Schritt: regelbasiert, wo die
+Indikatoren eindeutig sind, mit einem Sprachmodell dort, wo es unklar ist.
+Übrig bleiben dreitausenddreihundert echte Kurse, also knapp sechs Prozent.
+
+--{{1}}--
+Danach laufen drei Zweige parallel: Header-Metadaten, die Feature-Erkennung mit
+vierundvierzig Mustern, und eine KI-gestützte Einordnung der Bildungsstufe.
+Letztere ist die Grundlage für den Gruppenvergleich, den Sie gleich sehen —
+dafür bleiben knapp dreitausend Kurse mit eindeutiger Zuordnung.
 
 # Teil 4 — Ergebnisse
 
