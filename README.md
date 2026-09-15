@@ -51,6 +51,15 @@ edit: true
   color: #555;
   margin-top: .4rem;
 }
+
+.dense table {
+  font-size: 0.78em;
+  line-height: 1.25;
+}
+
+.dense td, .dense th {
+  padding: 2px 8px;
+}
 @end
 
 -->
@@ -397,7 +406,8 @@ Die eigentliche Erkenntnis liegt woanders.
 
 ## Adoptionsraten über alle Kurse
 
-<!-- style="font-size: 0.8em" -->
+<div class="dense">
+
 | Kategorie | Widely adopted | % | Rarely adopted | % |
 |---|---|---:|---|---:|
 | <span style="color:#4393c3">Presentation</span> | Narrator | 58,6 | Galleries | 7,3 |
@@ -417,6 +427,8 @@ Die eigentliche Erkenntnis liegt woanders.
 | | Script tags | 20,8 | WebApps | 5,6 |
 | | HTML embeds | 15,7 | Exec. code | 3,1 |
 | | | | Code projects | 0,4 |
+
+</div>
 
 *Adoptionsraten über alle 3.317 Kurse, je Kategorie nach Rate sortiert.
 Merkmale über 10 % links, darunter rechts. Auswahl aus 44 erhobenen Merkmalen.*
@@ -439,7 +451,8 @@ die Zahl nicht schönrechnen.
 Sobald man den Korpus nach Autorengruppen aufteilt, zerfällt das
 aggregierte Bild — **kein Akteur führt durchgängig**:
 
-<!-- style="font-size: 0.82em" -->
+<div class="dense">
+
 | Kategorie | Feature | Internal | MINT | Comm-Uni | Comm-Sch. |
 |---|---|---:|---:|---:|---:|
 | <span style="color:#4393c3">Presentation</span> | Narrator | 86,6 | 9,4 | **88,5** | 60,8 |
@@ -460,6 +473,8 @@ aggregierte Bild — **kein Akteur führt durchgängig**:
 | | HTML-Embeds | 20,4 | 5,9 | 20,5 | **39,2** |
 | | WebApps | 13,0 | 0,7 | 4,8 | **24,2** |
 | | Audio | **35,7** | 0,4 | 15,4 | 32,3 |
+
+</div>
 
 *Angaben in Prozent · Auswahl mit Spannweite > 10 pp · Zeilenmaximum **fett***
 
