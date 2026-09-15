@@ -375,27 +375,6 @@ intensiv es genutzt wird.
 --{{0}}--
 Kommen wir zu den Ergebnissen — und die erste Zahl hat uns selbst überrascht.
 
-## Die gute Nachricht
-
-<div class="bigfact">
-<div class="num">89 %</div>
-<div class="cap">des Feature-Raums werden messbar genutzt</div>
-</div>
-
-Nur **5 von 44** Features liegen unter 1 %.
-
-     {{1}}
-> [!NOTE]
-> Das Problem ist also **nicht**, dass Features ungenutzt bleiben.
-
---{{0}}--
-Neunundachtzig Prozent der Features werden in messbarem Umfang eingesetzt.
-Nur fünf von vierundvierzig liegen unter einem Prozent. Unsere Sorge, große
-Teile der Sprache seien tote Buchstaben, war unbegründet.
-
---{{1}}--
-Die eigentliche Erkenntnis liegt woanders.
-
 ## Adoptionsraten über alle Kurse
 
 | Kategorie | Widely adopted | % | Rarely adopted | % |
@@ -430,8 +409,6 @@ Effekte und Code-Projekte. Die Ein-Prozent-Schwelle für „ungenutzt" haben
 wir bewusst konservativ gewählt: Ein Merkmal gilt erst dann als nicht
 adoptiert, wenn es in weniger als etwa dreiunddreißig von
 dreitausenddreihundert Kursen vorkommt.
-
-## Vier Muster, eine Ursache
 
      {{0}}
 <span style="color:#4393c3">**Presentation**</span> — teilt sich scharf:
@@ -477,7 +454,7 @@ bewusst konservativ gewählt: Ein Merkmal gilt erst dann als nicht adoptiert,
 wenn es in weniger als etwa dreiunddreißig von dreitausenddreihundert Kursen
 vorkommt.
 
-## Vier Gruppen, vier Profile
+## Adoptionsraten nach Gruppen
 
 Sobald man den Korpus nach Autorengruppen aufteilt, zerfällt das
 aggregierte Bild — **kein Akteur führt durchgängig**:
@@ -519,22 +496,61 @@ Bei den Code-Blöcken führt das Entwicklerteam mit zweiundachtzig Prozent.
 Und bei WebApps liegt die Schule vorn — vor allen anderen. Genau diese drei
 Zeilen erzählen die Geschichte der nächsten Folien.
 
-## Hochschule und Schule — gegenläufig
+## Vier Profile, vier Handschriften
 
-| Feature | Comm-Uni | Comm-School |
-|---|---:|---:|
-| Narrator | **88,5 %** | 60,8 % |
-| Code-Blöcke | **53,7 %** | 28,5 % |
-| WebApps | 4,8 % | **24,2 %** |
-| Logo / Branding | 21,4 % | **57,0 %** |
+     {{0}}
+**Internal** — *Schaufenster*: führt bei code- und
+präsentationsnahen Merkmalen; die Entwickler demonstrieren die
+volle Sprachbreite.
 
      {{1}}
-> Gleiche Sprache. Zwei Communities. **Entgegengesetzte Schwerpunkte.**
+**MINT-the-GAP** — *Template-Werkstatt*: sättigt Reuse
+(Makros 99,7 %, Imports 98,3 %) für kleine, abgeschlossene MINT-Aufgaben.
+Alles außerhalb der Vorlage fehlt: Narrator 9,4 %, Animationen 0,6 %.
+
+     {{2}}
+**Comm-Uni** — *erzählend-textuell*: höchste Narrator-Quote (88,5 %),
+dazu Code-Blöcke und Tabellen — vorlesungsnahe, textstarke Inhalte
+mit wenig Multimedia.
+
+     {{3}}
+**Comm-School** — *multimedial-interaktiv*: genau umgekehrt —
+visuelles Branding, eingebettete Medien, Auswahl-Quizze.
+Engagement über Medienvielfalt statt über Code.
+
+     {{4}}
+> [!IMPORTANT]
+> MINT-the-GAP und Comm-School zielen **beide auf Schule** — über
+> entgegengesetzte Wege. Nicht der Bildungskontext allein bestimmt das
+> Profil, sondern die **Autoren-Infrastruktur**.
 
 --{{0}}--
-Am deutlichsten wird das beim Vergleich von Hochschule und Schule. Die einen
-setzen auf Sprachausgabe und Code, die anderen auf Medien und visuelle
-Gestaltung. Dieselbe Sprache, zwei fast gegenläufige Profile.
+Aus diesen Zahlen lassen sich vier Handschriften ablesen. Das Entwicklerteam
+ist das Schaufenster: Es führt dort, wo es um Code und Präsentation geht —
+was zu seiner Rolle als Demonstrator passt.
+
+--{{1}}--
+MINT-the-GAP ist die Template-Werkstatt. Reuse ist praktisch gesättigt, weil
+jede Aufgabendatei denselben Satz Bibliotheken importiert. Und genau deshalb
+fehlt alles, was nicht in der Vorlage steht.
+
+--{{2}}--
+Die Hochschule schreibt erzählend: höchste Narrator-Quote von allen, dazu
+Code und Tabellen. Das ist die klassische Vorlesung, in Textform gebracht.
+
+--{{3}}--
+Die Schule macht das Gegenteil: Logos, Icons, eingebettete Medien,
+Auswahl-Quizze. Engagement entsteht dort über Medienvielfalt, nicht über
+Quelltext. Eine Einschränkung dazu: Das ist die kleinste Gruppe, und drei
+Accounts stellen vierundvierzig Prozent der Kurse — das Profil kann also
+teilweise einzelne produktive Autor:innen abbilden.
+
+--{{4}}--
+Und hier ist der Punkt, auf den alles zuläuft: MINT-the-GAP und die
+Schul-Community adressieren dieselbe Zielgruppe — Schülerinnen und Schüler.
+Ihre Profile könnten unterschiedlicher kaum sein. Der Bildungskontext allein
+erklärt das also nicht. Was den Unterschied macht, ist die Infrastruktur,
+mit der die Autor:innen arbeiten.
 
 ## Zwischenfrage
 
