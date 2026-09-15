@@ -11,7 +11,7 @@ comment:  Designed but Not Used? — Feature-Adoption in einem System ohne
           Vortragende: Sebastian Zug, André Dietrich, Ines Aubel
           (TU Bergakademie Freiberg).
 
-author:   Sebastian Zug
+author:   Sebastian Zug, André Dietrich, Ines Aubel, Martin Lommatzsch, Volker Göhler
 
 import: https://raw.githubusercontent.com/LiaTemplates/LiveEdit-Embeddings/refs/tags/0.0.1/README.md
 
@@ -60,9 +60,9 @@ edit: true
 
 <h2>Feature-Adoption in einem System ohne Telemetrie</h2>
 
-<h4>Prof. Dr. Sebastian Zug, Dr. André Dietrich, Dr. Ines Aubel</h4>
+<h4>Sebastian Zug, André Dietrich, Ines Aubel, Martin Lommatzsch, Volker Göhler</h4>
 
-<h4>TU Bergakademie Freiberg, Institut für Informatik</h4>
+<h4>TU Bergakademie Freiberg · Geschwister-Scholl-Gymnasium Freiberg</h4>
 
 <div class="cols">
 <div>
