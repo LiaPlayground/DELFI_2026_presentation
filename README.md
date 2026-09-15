@@ -103,7 +103,13 @@ Dieser Vortrag ist unter folgenden [Link](https://liascript.github.io/course/?ht
 Dieser Foliensatz steht unter einer Creative-Commons-Lizenz (CC BY 4.0). Der Quelltext liegt auf [GitHub](https://github.com/LiaPlayground/DELFI_2026_presentation).
 
 --{{0}}--
-Herzlich willkommen. Diese Annotationen fassen die Erläuterungen im Zusammenhang mit der Vorstellung des Papers anlässlich der DELFI 2026 zusammen. Ausgehend vom 
+Herzlich willkommen. Diese Annotationen fassen die Erläuterungen zur
+Vorstellung des Papers auf der DELFI 2026 zusammen. Der Vortrag gliedert sich
+in vier Teile: Zunächst stellen wir LiaScript und die Ausgangslage vor, dann
+das methodische Problem, das sich aus der bewussten Datensparsamkeit ergibt.
+Darauf folgen Korpusaufbau und Merkmalserhebung sowie die Ergebnisse. Den
+Abschluss bilden die Konsequenzen, die wir daraus für unsere eigenen
+Workshops gezogen haben.
 
 ## Was ist LiaScript?
 
@@ -112,7 +118,10 @@ Herzlich willkommen. Diese Annotationen fassen die Erläuterungen im Zusammenhan
 > interaktive Lehre fehlen. Dabei bleibt alles ein Text - den man beliebig verändern und kompieren kann.**
 
 --{{0}}--
-Zunächst kurz: Was ist LiaScript überhaupt? Für alle, die es noch nicht kennen.
+Für alle, die LiaScript noch nicht kennen: Ein Kurs ist eine einzelne
+Markdown-Datei. Die Auszeichnungssprache erweitert Standard-Markdown um
+Elemente, die für interaktive Lehre erforderlich sind — und bleibt dabei
+durchgängig Text, der kopiert, versioniert und weitergegeben werden kann.
 
 ````markdown @embed.style(height: 520px; min-width: 100%; border: 1px black solid)
 <!--
@@ -150,9 +159,11 @@ A2B2 | c4c4c4B2c2 | d4B3BB4A4 | G8F8 | G4e4d4c2A2 | B8A8 | G8z8
 ````
 
 --{{0}}--
-Links der Quelltext, rechts das Ergebnis. Formatierung, Mathematik, Tabellen
-und Quizze — alles in einer Textdatei, alles sofort im Browser. Genau diese
-Bausteine sind es, deren Nutzung wir später vermessen.
+Links sehen Sie den Quelltext, rechts das gerenderte Ergebnis; Änderungen
+links wirken unmittelbar. Das Beispiel zeigt vier Ebenen: Standard-Markdown,
+ein Quiz in LiaScript-Syntax, eine über ein Template eingebundene
+Notendarstellung und ein eingebettetes 3D-Modell. Genau solche Elemente sind
+die Merkmale, deren Verbreitung wir im Folgenden quantifizieren.
 
 ### Sovereignty by Design
 
@@ -192,6 +203,15 @@ einen Preis — und der ist der Ausgangspunkt dieses Papers.
 
 > __... und damit die Nachfrage nach Tutorials und Workshops.__
 
+--{{0}}--
+Die Zahl öffentlich verfügbarer Kurse wächst seit 2017 kontinuierlich; im
+August 2026 sind es gut fünftausend Kurse in knapp dreihundert
+Repository-Accounts. Zwei Hinweise zur Lesart: Die blau markierte Fläche
+entfällt auf ein einzelnes Projekt, auf das wir später zurückkommen. Und das
+Jahr 2026 ist nur bis August erfasst. Mit der Verbreitung steigt zugleich die
+Nachfrage nach Einführungsveranstaltungen — womit sich die Frage stellt,
+woran wir deren Inhalte eigentlich ausrichten.
+
 ## Das Problem
 
 > [!IMPORTANT]
@@ -222,6 +242,16 @@ einen Preis — und der ist der Ausgangspunkt dieses Papers.
 > [!TIP]
 > __Die Vermutung, dass unterschiedliche Anwendungskontexte eine verschiedene Nutzungsmuster zeigen ist offensichtlich, aber wie können wir das nachweisen?__
 
+--{{0}}--
+Die beiden Beispiele stehen für sehr unterschiedliche Anwendungskontexte: ein
+Grundschulkurs zum Sachunterricht, der vorrangig mit Bildern und
+Auswahlaufgaben arbeitet, und ein Template für die wissenschaftliche
+Community, das typografische Möglichkeiten ausreizt. Beide nutzen dieselbe
+Sprache, aber erkennbar unterschiedliche Teilmengen ihrer Merkmale. Dass
+Anwendungskontexte zu verschiedenen Nutzungsmustern führen, ist insofern
+naheliegend. Offen ist, wie sich das belastbar nachweisen lässt — denn
+Rückmeldungen erreichen uns nur punktuell und unsystematisch.
+
 ## Methodik
 
 > [!IMPORTANT]
@@ -241,6 +271,13 @@ einen Preis — und der ist der Ausgangspunkt dieses Papers.
 
 > [!TIP]
 > Die manuelle Erfassung der Rückmeldungen der Nutzenden ist offenbar kein geeignetes Vorgehensmodell.
+
+--{{0}}--
+Einzelne Rückmeldungen wie diese sind aufschlussreich, aber sie entstehen
+zufällig und sind nicht repräsentativ. Für eine systematische Aussage
+benötigen wir eine andere Datengrundlage. Da LiaScript keine Telemetrie
+erhebt, bleibt als einziger Beobachtungskanal das, was Autorinnen und Autoren
+öffentlich publizieren: ihre Kurse in offenen Repositories.
 
 ### Der Korpus
 
@@ -296,6 +333,22 @@ weiter gewachsen.*
 </div>
 </div>
 
+--{{0}}--
+Die Aufbereitung erfolgt in vier Schritten. Eine Repository-Suche über die
+GitHub-API liefert gut tausend Kandidaten, aus denen rund
+siebenundfünfzigtausend Markdown-Dateien extrahiert werden. Die Validierung
+kombiniert regelbasierte Indikatoren mit einem Sprachmodell für die unklaren
+Fälle; es verbleiben dreitausenddreihundertsiebzehn Kurse, also knapp sechs
+Prozent der Dateien. Anschließend laufen drei Zweige parallel:
+Header-Metadaten, die Merkmalserkennung über Regex-Muster und eine
+KI-gestützte Einordnung der Bildungsstufe.
+Zwei Einschränkungen sind für die Interpretation wesentlich. Erstens beruht
+die Analyse auf dem Stand von März 2026; der Korpus ist seither gewachsen.
+Zweitens — und das ist die wichtigere Einschränkung — erfassen wir
+ausschließlich *author adoption*: welche Merkmale Autorinnen und Autoren in
+ihre Kurse aufnehmen. Über die tatsächliche Nutzung durch Lernende erlaubt
+der Korpus keine Aussage.
+
 ### Inhalte der Kurse
 
 Nicht jede Gruppe von Autor:innen ist vergleichbar — wir trennen daher
@@ -325,18 +378,15 @@ Autor:innen haben sehr unterschiedliche Beziehungen zum Werkzeug. Deshalb
 trennen wir in zwei Schritten: zuerst nach Repository-Kontext — wer gehört
 zum Entwicklerteam, wer ist eine eigene Initiative — und innerhalb der
 übrigen Community nach Bildungsstufe, also Hochschule oder Schule.
-
---{{1}}--
-Der wichtigste Grund steht hier: MINT-the-GAP ist ein einzelner Account mit
-über tausend Kursen, fast ein Drittel des Korpus. Würden wir das nicht
-heraustrennen, wäre jede Aussage über die Community in Wahrheit eine Aussage
-über dieses eine Projekt.
+Ausschlaggebend ist dabei MINT-the-GAP: ein einzelner Account mit über tausend
+Kursen und damit knapp einem Drittel des Korpus. Ohne diese Trennung wäre jede
+Aussage über die Community faktisch eine Aussage über dieses eine Projekt.
 
 --{{2}}--
-Und noch eine Ehrlichkeit: Dreihundertvierundvierzig Kurse lassen sich nicht
-eindeutig zuordnen — Berufsbildung, Weiterbildung, oder der Klassifikator war
-unsicher. Die lassen wir im Gruppenvergleich weg. So kommen wir von
-dreitausenddreihundert auf knapp dreitausend Kurse.
+Dreihundertvierundvierzig Kurse entfallen auf Berufs- und Weiterbildung oder
+lassen sich nicht eindeutig zuordnen. Sie bleiben im Gruppenvergleich
+unberücksichtigt, sodass sich die Grundgesamtheit von dreitausenddreihundert
+auf zweitausendneunhundertdreiundsiebzig Kurse reduziert.
 
 ### Merkmalskategorisierung
 
@@ -394,10 +444,9 @@ Nur **5 von 44** Merkmalen bleiben unter 1 %:
 > Das Problem ist also **nicht**, dass Merkmale ungenutzt bleiben.
 
 --{{0}}--
-Kommen wir zu den Ergebnissen — und die erste Zahl hat uns selbst überrascht.
-Neunundachtzig Prozent des Merkmalsraums werden in messbarem Umfang
-eingesetzt. Unsere Sorge, große Teile der Sprache seien tote Buchstaben, war
-unbegründet.
+Der erste Befund betrifft die Breite der Adoption: Neunundachtzig Prozent des
+erhobenen Merkmalsraums werden in messbarem Umfang eingesetzt. Die Annahme,
+wesentliche Teile der Sprache blieben ungenutzt, bestätigt sich somit nicht.
 
 --{{1}}--
 Die Zahl kommt so zustande: Wir erheben vierundvierzig Merkmale, und nur
@@ -408,8 +457,8 @@ dreitausenddreihundert Kursen und markiert Merkmale, die praktisch nicht
 vorkommen — nicht solche, die bloß selten sind.
 
 --{{2}}--
-Das Problem liegt also nicht darin, dass Merkmale ungenutzt bleiben. Es liegt
-woanders — und das sehen Sie auf den nächsten Folien.
+Die Herausforderung liegt demnach nicht in ungenutzten Merkmalen, sondern in
+der Verteilung ihrer Nutzung — wie die folgenden Auswertungen zeigen.
 
 ### Adoptionsraten über alle Kurse
 
@@ -446,11 +495,11 @@ Effekte und Code-Projekte.
      {{0}}
 <span style="color:#4393c3">**Presentation**</span> — teilt sich scharf:
 Narrator und Animationen mit geringem Aufwand breit genutzt,
-Text-to-Speach (TTS) scheint kaum Anwendungen zu finden.
+feingranulare Text-to-Speech-Varianten (TTS) dagegen kaum.
 
      {{1}}
 <span style="color:#d6604d">**Interaction**</span> — von einfachen Quizzen dominiert
-(45,5 %); komplexe Matrix-Quiz und Umfragen werden kaum genutzt..
+(45,5 %); komplexe Matrix-Quiz und Umfragen werden kaum genutzt.
 
      {{2}}
 <span style="color:#4dac26">**Reuse**</span> — getragen von Imports und Makros:
@@ -470,22 +519,22 @@ Komma eins. Es ist nicht das Interesse, das fehlt, sondern die Sichtbarkeit
 der zweiten Stufe.
 
 --{{1}}--
-Interaction ist schlicht Quiz-Land. Fast die Hälfte aller Kurse hat ein Quiz,
-aber die spezielleren Formate — Umfragen, Matrix-Aufgaben — bleiben Randnotiz.
+In der Kategorie Interaction dominieren einfache Quizformate: Knapp die Hälfte
+aller Kurse enthält mindestens ein Quiz. Spezialisiertere Formate wie Umfragen
+oder Matrix-Aufgaben bleiben dagegen deutlich unter fünf Prozent.
 
 --{{2}}--
-Reuse finde ich am aufschlussreichsten: Imports und Makros werden breit
-genutzt, aber eigene Makros definieren nicht einmal neun Prozent. Die
-Community konsumiert geteilte Bausteine, sie produziert sie kaum. Das ist
-genau der Punkt, an dem Infrastruktur ansetzen könnte.
+Besonders aufschlussreich ist die Kategorie Reuse. Imports und Makros werden
+breit genutzt, eigene Makros definieren jedoch weniger als neun Prozent der
+Kurse. Die Community konsumiert geteilte Bausteine in erheblichem Umfang,
+produziert sie aber kaum selbst — ein Ansatzpunkt für infrastrukturelle
+Unterstützung.
 
 --{{3}}--
-Und Embedding streut am weitesten. Mathematik fast fünfzig Prozent —
-ausführbarer Code drei. Dabei ist gerade das ein Alleinstellungsmerkmal von
-LiaScript. Die Ein-Prozent-Schwelle für „ungenutzt" haben wir übrigens
-bewusst konservativ gewählt: Ein Merkmal gilt erst dann als nicht adoptiert,
-wenn es in weniger als etwa dreiunddreißig von dreitausenddreihundert Kursen
-vorkommt.
+Die Kategorie Embedding weist die größte Spannweite auf: Mathematische
+Notation erreicht achtundvierzig Prozent, ausführbarer Code dagegen nur drei
+Prozent — obwohl gerade die Codeausführung im Browser ein Alleinstellungsmerkmal
+der Sprache darstellt.
 
 ### Adoptionsraten nach Gruppen
 
@@ -519,8 +568,8 @@ aggregierte Bild — **kein Akteur führt durchgängig**:
 Hier sehen Sie dieselbe Information als Zahlen — die Features, bei denen sich
 die Gruppen um mehr als zehn Prozentpunkte unterscheiden. Lesen Sie die
 Tabelle zeilenweise: Der fette Wert zeigt, welche Gruppe ein Feature am
-stärksten nutzt. Und der springt munter zwischen den Spalten hin und her.
-Kein einziger Akteur führt durchgängig.
+stärksten nutzt. Dieses Maximum wechselt zeilenweise zwischen den Spalten —
+keine Gruppe führt durchgängig.
 
 --{{1}}--
 Drei Zeilen lohnen den genaueren Blick. Bei den externen Skripten steht
@@ -572,16 +621,16 @@ Code und Tabellen. Das ist die klassische Vorlesung, in Textform gebracht.
 --{{3}}--
 Die Schule macht das Gegenteil: Logos, Icons, eingebettete Medien,
 Auswahl-Quizze. Engagement entsteht dort über Medienvielfalt, nicht über
-Quelltext. Eine Einschränkung dazu: Das ist die kleinste Gruppe, und drei
-Accounts stellen vierundvierzig Prozent der Kurse — das Profil kann also
-teilweise einzelne produktive Autor:innen abbilden.
+Quelltext. Hierzu eine methodische Einschränkung: Comm-School ist die kleinste
+Gruppe, und drei Accounts stellen vierundvierzig Prozent ihrer Kurse. Das
+Profil kann daher teilweise die Handschrift einzelner produktiver Autorinnen
+und Autoren abbilden.
 
 --{{4}}--
-Und hier ist der Punkt, auf den alles zuläuft: MINT-the-GAP und die
-Schul-Community adressieren dieselbe Zielgruppe — Schülerinnen und Schüler.
-Ihre Profile könnten unterschiedlicher kaum sein. Der Bildungskontext allein
-erklärt das also nicht. Was den Unterschied macht, ist die Infrastruktur,
-mit der die Autor:innen arbeiten.
+Daraus folgt der zentrale Befund: MINT-the-GAP und die schulische Community
+adressieren dieselbe Zielgruppe, weisen aber gegenläufige Merkmalsprofile auf.
+Der Bildungskontext allein erklärt die Unterschiede demnach nicht — die
+Autorenumgebung wirkt mindestens ebenso stark.
 
 ## Konsequenz für unsere Tutorials
 
@@ -597,6 +646,18 @@ Die Gruppen steigen auf **unterschiedlichen Leitern** ein:
 > **Ein linearer Tutorial-Pfad ist deshalb falsch.**
 >
 > Onboarding muss dort ansetzen, wo die jeweilige Gruppe steht.
+
+--{{0}}--
+Liest man die Gruppenprofile als geordnete Abfolgen, ergeben sich zwei
+unterschiedliche Einstiegspfade. Autorinnen und Autoren im Hochschulkontext
+beginnen bei Sprachausgabe und Text, erweitern um Code und Makros und
+erreichen aufwendigere Präsentationsmerkmale kaum. Im schulischen Kontext
+verläuft der Einstieg über visuelle Medien und Quizformate, während
+codeorientierte Merkmale nahezu unerreicht bleiben. Da sich die Profile
+innerhalb von Comm-Uni zwischen produktiven und gelegentlichen Autorinnen und
+Autoren kaum unterscheiden, spiegeln diese Grenzen den Anwendungskontext
+wider, nicht die Produktionsmenge. Ein einzelner linearer Einführungspfad
+adressiert damit beide Gruppen nur unzureichend.
 
 ***********************************************
 
@@ -630,87 +691,88 @@ Die Gruppen steigen auf **unterschiedlichen Leitern** ein:
 > Die Struktur ist eine **Neuentwicklung auf Basis dieser Ergebnisse** —
 > mit **getrennten Einstiegen** für Schule und Hochschule.
 
+--{{1}}--
+Aus diesen Beobachtungen haben wir unser Workshopkonzept neu entwickelt. Es
+gliedert sich in vier Phasen, wobei der überwiegende Zeitanteil auf das eigene
+Arbeiten entfällt. Drei Befunde sind unmittelbar eingeflossen. Erstens setzt
+Phase eins am Awareness-Problem an: Die Teilnehmenden durchlaufen zunächst
+einen fertigen Kurs aus der Perspektive Lernender, statt mit einer
+Merkmalsübersicht zu beginnen. Zweitens adressieren Arbeitsvorlage und
+Cheatsheet in Phase drei die Diskrepanz zwischen Konsumieren und Definieren.
+Drittens erhält das Veröffentlichen eine eigene Phase, da es sich als
+eigenständige Hürde erwiesen hat. Die Choreografie ist für beide Kontexte
+identisch, die inhaltliche Füllung jedoch getrennt: für den Schulkontext
+erprobt im Mai 2026, für den Hochschulkontext im Juli 2026.
+
 ***********************************************
 
 ## Zukünftige Herausforderungen
 
-     {{0}}
 **1 · Vom Ergebnis zum Entstehungsprozess**
 Wir sehen heute nur den **Endstand** eines Kurses. Die Commit-Historie
 verrät, *wo* Autor:innen lange mit der Syntax gerungen haben — genau dort
 liegen die realen Hürden.
 
-     {{1}}
 **2 · Didaktische Absicht deklarieren statt erraten**
 Die Bildungsstufe ermitteln wir per KI-Klassifikation. Erweiterte
 **standardisierte Metadaten** würden die Zuordnung überflüssig machen —
 und wären zugleich für OER-Portale wertvoll.
 
-     {{2}}
 **3 · KI-generierte Inhalte mitdenken**
-Schreibt ein Agent den Kurs, misst die Merkmalsanalyse **dessen
-Konfiguration** — nicht mehr die didaktische Entscheidung einer Person.
+Schreibt ein Agent den Kurs, misst die Merkmalsanalyse **dessen Konfiguration** — nicht mehr die didaktische Entscheidung einer Person.
 
-     {{3}}
 > [!WARNING]
 > Der MINT-the-GAP-Effekt im Großen: Ein Template prägte 1.147 Kurse.
 > Ein verbreiteter Agent prägt womöglich **alle**.
 
 --{{0}}--
-Zum Schluss drei Punkte, an denen wir weiterarbeiten. Der erste betrifft die
-Methodik selbst: Wir sehen immer nur den fertigen Kurs. Was wir nicht sehen,
-ist der Weg dorthin. Die Commit-Historie würde verraten, an welchen Stellen
-Autorinnen und Autoren lange gebraucht haben — und das sind die eigentlich
-interessanten Stellen für uns, weil dort die Hürden sitzen.
+Abschließend drei Punkte, an denen wir weiterarbeiten. Der erste betrifft die
+Methodik: Der Korpus erfasst ausschließlich den Endstand eines Kurses. Die
+Commit-Historie würde zusätzlich sichtbar machen, an welchen Stellen
+Autorinnen und Autoren wiederholt nachgebessert haben — dort dürften die
+tatsächlichen syntaktischen Hürden liegen.
 
---{{1}}--
-Zweitens: Wir ermitteln die Bildungsstufe mit einem Sprachmodell, weil die
-Information nirgends steht. Besser wäre, sie stünde einfach im Kurs. Erweiterte
-standardisierte Metadaten würden die Erkennung überflüssig machen — und sie
-hätten einen doppelten Nutzen, weil OER-Portale dieselbe Information brauchen.
-
---{{2}}--
-Und drittens der Punkt, der unsere Methodik am stärksten herausfordert: Wenn
-ein KI-Agent den Kurs schreibt, dann messen wir nicht mehr, was eine Lehrkraft
-didaktisch entschieden hat. Wir messen, wie der Agent konfiguriert ist.
-
---{{3}}--
-Das ist der MINT-the-GAP-Effekt im Großen. Dort hat ein Template über tausend
-Kurse geprägt — das konnten wir sauber heraustrennen. Ein weit verbreiteter
-Agent prägt möglicherweise alle Kurse gleichzeitig, und dann gibt es keine
-Vergleichsgruppe mehr. Umso wichtiger wird, dass wir die Unterstützung der
-Autor:innen aktiv gestalten, statt sie dem Zufall der Voreinstellungen zu
-überlassen.
-
+Der zweite Punkt betrifft die Klassifikation. Die Bildungsstufe ermitteln wir
+gegenwärtig über ein Sprachmodell, weil die Information in den Dokumenten
+nicht deklariert ist. Erweiterte standardisierte Metadaten würden diesen
+Zwischenschritt erübrigen und zugleich der Auffindbarkeit in OER-Portalen
+zugutekommen.
+Der dritte Punkt berührt die Aussagekraft der Methode selbst. Wenn Kurse
+zunehmend mit KI-Unterstützung entstehen, misst eine Merkmalsanalyse nicht
+mehr primär didaktische Entscheidungen einzelner Lehrender, sondern die
+Konfiguration des eingesetzten Agenten. Der in dieser Untersuchung
+beobachtete Template-Effekt liefert dafür eine Analogie: Eine gemeinsame
+Konfiguration prägte über tausend Kurse. Sie ließ sich hier isolieren, weil
+Vergleichsgruppen existierten. Bei breit eingesetzten Assistenzsystemen wäre
+diese Kontrolle nicht mehr ohne Weiteres gegeben — umso wichtiger wird es,
+deren Voreinstellungen bewusst zu gestalten.
 
 ## Zusammengefasst
 
+{{0-2}}
 - **89 %** des Feature-Raums werden genutzt — das ist nicht das Problem
 - Jede Community erkundet nur **ihr eigenes Subset**
 - **Autoren-Infrastruktur** prägt Adoption so stark wie Didaktik
 - Onboarding braucht **kontextspezifische Einstiege** —
   seit Sommer 2026 in unseren Workshops umgesetzt
 
-     {{1}}
-> Ein Korpus ist bei fehlender Telemetrie ein **tragfähiger Proxy** —
-> wiederholbar, ohne die Datensparsamkeit aufzugeben.
-
 --{{0}}--
-Zusammengefasst: Das Problem ist nicht, dass Features ungenutzt bleiben,
-sondern dass jede Gruppe nur ihren Ausschnitt kennt. Und die Infrastruktur,
-mit der Autoren arbeiten, prägt das mindestens so stark wie ihre Didaktik.
+Zusammengefasst: Die Breite der Adoption ist nicht das Problem —
+neunundachtzig Prozent des Merkmalsraums werden genutzt. Entscheidend ist,
+dass jede Autorengruppe nur einen Ausschnitt erschließt, und dass die
+Infrastruktur, mit der gearbeitet wird, diesen Ausschnitt mindestens so stark
+prägt wie die didaktische Zielstellung. Für die Gestaltung von
+Einführungsangeboten folgt daraus die Notwendigkeit kontextspezifischer
+Einstiege, die wir seit Sommer 2026 umsetzen. Methodisch zeigt die Arbeit,
+dass sich die Nutzung eines bewusst datensparsamen Systems über einen
+öffentlichen Korpus untersuchen lässt, ohne dessen Datensparsamkeit
+aufzugeben.
 
---{{1}}--
-Und methodisch: Man kann die Nutzung eines datensparsamen Systems untersuchen,
-ohne die Datensparsamkeit aufzugeben. Der Korpus ist ein Proxy — aber ein
-tragfähiger.
-
-## Vielen Dank
+{{1-2}}
+*************************************
 
 <div class="cols">
 <div>
-
-__Diesen Vortrag öffnen:__
 
 [qr-code](https://liascript.github.io/course/?https://raw.githubusercontent.com/LiaPlayground/DELFI_2026_presentation/main/README.md "Diesen Vortrag im Browser öffnen")
 
@@ -730,7 +792,9 @@ __Datensatz:__
 </div>
 </div>
 
---{{0}}--
+*************************************
+
+--{{1}}--
 Vielen Dank für Ihre Aufmerksamkeit. Den Foliensatz können Sie über den
 QR-Code direkt öffnen — er ist selbst ein LiaScript-Kurs, Sie können ihn also
 sofort editieren und weiterverwenden. Der Datensatz liegt ebenfalls offen.
