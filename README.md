@@ -135,9 +135,13 @@ Die Bergakademie wurde **1765** gegründet und ist damit die älteste noch beste
 
 **Quizz**
 
-Welches Element wurde in Freiberg entdeckt?
+Welches mit `G` beginnende Element wurde in Freiberg entdeckt?
+[[ Germanium ]]
+******
 
-[[ (Germanium|Indium) ]]
+Richtig! 1886 war das.
+
+******
 
 **Interaktion**
 
