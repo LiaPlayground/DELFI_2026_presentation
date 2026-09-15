@@ -426,13 +426,56 @@ Hier die Aufteilung: links die Merkmale über zehn Prozent, rechts die
 darunter. Jede Kategorie hat beide Seiten — es gibt keinen Bereich der
 Sprache, der komplett brachliegt, und keinen, der durchgängig genutzt wird.
 Makros, Imports und der Narrator führen das Feld an; ganz unten stehen
-Effekte und Code-Projekte.
+Effekte und Code-Projekte. Die Ein-Prozent-Schwelle für „ungenutzt" haben
+wir bewusst konservativ gewählt: Ein Merkmal gilt erst dann als nicht
+adoptiert, wenn es in weniger als etwa dreiunddreißig von
+dreitausenddreihundert Kursen vorkommt.
+
+## Vier Muster, eine Ursache
+
+     {{0}}
+<span style="color:#4393c3">**Presentation**</span> — teilt sich scharf:
+Narrator und Animationen mit geringem Aufwand breit genutzt,
+die feingranularen Varianten nahe null.
+
+     {{1}}
+<span style="color:#d6604d">**Interaction**</span> — von Quizzen dominiert
+(45,5 %); Umfragen und Matrix-Quiz bleiben selten.
+
+     {{2}}
+<span style="color:#4dac26">**Reuse**</span> — getragen von Imports und Makros:
+Die meisten Autor:innen **konsumieren** geteilte Bausteine,
+kaum jemand **definiert** eigene (8,7 %).
+
+     {{3}}
+<span style="color:#998ec3">**Embedding**</span> — streut am weitesten:
+Mathematik erreicht 48 %, doch ausführbarer Code (3,1 %) und
+Code-Projekte (0,4 %) bleiben Nische — obwohl sie ein Alleinstellungsmerkmal sind.
+
+--{{0}}--
+Jede Kategorie hat ihr eigenes Muster. Presentation teilt sich scharf: Was
+eine Zeile im Header kostet — der Narrator — nutzen fast sechzig Prozent.
+Die feineren Varianten derselben Technik, TTS-Blöcke etwa, liegen bei null
+Komma eins. Es ist nicht das Interesse, das fehlt, sondern die Sichtbarkeit
+der zweiten Stufe.
 
 --{{1}}--
-Die Ein-Prozent-Schwelle für „ungenutzt" ist bewusst konservativ gewählt:
-Ein Merkmal gilt erst dann als nicht adoptiert, wenn es in weniger als
-etwa dreiunddreißig von dreitausenddreihundert Kursen vorkommt. Wir wollten
-die Zahl nicht schönrechnen.
+Interaction ist schlicht Quiz-Land. Fast die Hälfte aller Kurse hat ein Quiz,
+aber die spezielleren Formate — Umfragen, Matrix-Aufgaben — bleiben Randnotiz.
+
+--{{2}}--
+Reuse finde ich am aufschlussreichsten: Imports und Makros werden breit
+genutzt, aber eigene Makros definieren nicht einmal neun Prozent. Die
+Community konsumiert geteilte Bausteine, sie produziert sie kaum. Das ist
+genau der Punkt, an dem Infrastruktur ansetzen könnte.
+
+--{{3}}--
+Und Embedding streut am weitesten. Mathematik fast fünfzig Prozent —
+ausführbarer Code drei. Dabei ist gerade das ein Alleinstellungsmerkmal von
+LiaScript. Die Ein-Prozent-Schwelle für „ungenutzt" haben wir übrigens
+bewusst konservativ gewählt: Ein Merkmal gilt erst dann als nicht adoptiert,
+wenn es in weniger als etwa dreiunddreißig von dreitausenddreihundert Kursen
+vorkommt.
 
 ## Vier Gruppen, vier Profile
 
