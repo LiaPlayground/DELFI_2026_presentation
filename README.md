@@ -295,7 +295,49 @@ weiter gewachsen.*
 </div>
 </div>
 
-## Kategoriesierung der Merkmale
+## Inhalte der Kurse
+
+Nicht jede Gruppe von Autor:innen ist vergleichbar — wir trennen daher
+zuerst nach **Repository-Kontext**, dann nach **Bildungsstufe**:
+
+<!-- data-type="none" -->
+| Gruppe | Kurse | Accounts | Charakter |
+|---|---:|---:|---|
+| **Internal** | 462 | 7 | Kernteam: Templates, Demos, eigene Lehre |
+| **MINT-the-GAP** | 1.147 | 1 | Eine Schulinitiative, strukturierte MINT-Kurse |
+| **Comm-Uni** | 1.178 | 167 | Community, Hochschule — größte & vielfältigste Gruppe |
+| **Comm-School** | 186 | 38 | Community, Schule (Primar & Sekundar) |
+
+> [!NOTE]
+> **Warum trennen?** MINT-the-GAP stellt fast ein Drittel aller Kurse aus
+> **einem** Account — ohne Trennung würde diese Initiative jede Aussage
+> über „die Community" dominieren.
+
+     {{2}}
+> Weitere **344 Kurse** (Berufs-/Weiterbildung oder ohne klare Zuordnung)
+> bleiben außen vor → **2.973 Kurse** im Gruppenvergleich.
+
+--{{0}}--
+Bevor wir auf die Ergebnisse schauen, müssen wir eine Entscheidung erklären.
+Wir können nicht einfach über „die LiaScript-Community" sprechen, denn die
+Autor:innen haben sehr unterschiedliche Beziehungen zum Werkzeug. Deshalb
+trennen wir in zwei Schritten: zuerst nach Repository-Kontext — wer gehört
+zum Entwicklerteam, wer ist eine eigene Initiative — und innerhalb der
+übrigen Community nach Bildungsstufe, also Hochschule oder Schule.
+
+--{{1}}--
+Der wichtigste Grund steht hier: MINT-the-GAP ist ein einzelner Account mit
+über tausend Kursen, fast ein Drittel des Korpus. Würden wir das nicht
+heraustrennen, wäre jede Aussage über die Community in Wahrheit eine Aussage
+über dieses eine Projekt.
+
+--{{2}}--
+Und noch eine Ehrlichkeit: Dreihundertvierundvierzig Kurse lassen sich nicht
+eindeutig zuordnen — Berufsbildung, Weiterbildung, oder der Klassifikator war
+unsicher. Die lassen wir im Gruppenvergleich weg. So kommen wir von
+dreitausenddreihundert auf knapp dreitausend Kurse.
+
+## Merkmalskategorisierung
 
 **44 binäre Merkmale**, erhoben über Muster im Markdown-Quelltext —
 gruppiert nach der **didaktischen Barriere**, die sie adressieren:
@@ -327,48 +369,6 @@ sollten: Wir messen, ob ein Feature vorkommt — nicht, wie zentral es für den
 Kurs ist. Die Zahlen sagen also, wie weit ein Feature reicht, nicht wie
 intensiv es genutzt wird.
 
-## Kategorisierung der Kurse
-
-Nicht jede Gruppe von Autor:innen ist vergleichbar — wir trennen daher
-zuerst nach **Repository-Kontext**, dann nach **Bildungsstufe**:
-
-| Gruppe | Kurse | Accounts | Charakter |
-|---|---:|---:|---|
-| **Internal** | 462 | 7 | Kernteam: Templates, Demos, eigene Lehre |
-| **MINT-the-GAP** | 1.147 | 1 | Eine Schulinitiative, strukturierte MINT-Kurse |
-| **Comm-Uni** | 1.178 | 167 | Community, Hochschule — größte & vielfältigste Gruppe |
-| **Comm-School** | 186 | 38 | Community, Schule (Primar & Sekundar) |
-
-     {{1}}
-> [!NOTE]
-> **Warum trennen?** MINT-the-GAP stellt fast ein Drittel aller Kurse aus
-> **einem** Account — ohne Trennung würde diese Initiative jede Aussage
-> über „die Community" dominieren.
-
-     {{2}}
-> Weitere **344 Kurse** (Berufs-/Weiterbildung oder ohne klare Zuordnung)
-> bleiben außen vor → **2.973 Kurse** im Gruppenvergleich.
-
---{{0}}--
-Bevor wir auf die Ergebnisse schauen, müssen wir eine Entscheidung erklären.
-Wir können nicht einfach über „die LiaScript-Community" sprechen, denn die
-Autor:innen haben sehr unterschiedliche Beziehungen zum Werkzeug. Deshalb
-trennen wir in zwei Schritten: zuerst nach Repository-Kontext — wer gehört
-zum Entwicklerteam, wer ist eine eigene Initiative — und innerhalb der
-übrigen Community nach Bildungsstufe, also Hochschule oder Schule.
-
---{{1}}--
-Der wichtigste Grund steht hier: MINT-the-GAP ist ein einzelner Account mit
-über tausend Kursen, fast ein Drittel des Korpus. Würden wir das nicht
-heraustrennen, wäre jede Aussage über die Community in Wahrheit eine Aussage
-über dieses eine Projekt.
-
---{{2}}--
-Und noch eine Ehrlichkeit: Dreihundertvierundvierzig Kurse lassen sich nicht
-eindeutig zuordnen — Berufsbildung, Weiterbildung, oder der Klassifikator war
-unsicher. Die lassen wir im Gruppenvergleich weg. So kommen wir von
-dreitausenddreihundert auf knapp dreitausend Kurse.
-
 # Teil 4 — Ergebnisse
 
 --{{0}}--
@@ -395,13 +395,48 @@ Teile der Sprache seien tote Buchstaben, war unbegründet.
 --{{1}}--
 Die eigentliche Erkenntnis liegt woanders.
 
-## Jede Gruppe nutzt ihr eigenes Subset
+## Vier Gruppen, vier Profile
 
-![Feature-Profile der vier Gruppen](img/three_group_radar.png)
+Sobald man den Korpus nach Autorengruppen aufteilt, zerfällt das
+aggregierte Bild — **kein Akteur führt durchgängig**:
+
+<!-- style="font-size: 0.82em" -->
+| Kategorie | Feature | Internal | MINT | Comm-Uni | Comm-Sch. |
+|---|---|---:|---:|---:|---:|
+| <span style="color:#4393c3">Presentation</span> | Narrator | 86,6 | 9,4 | **88,5** | 60,8 |
+| | TTS-Fragmente | **36,1** | 0,1 | 13,3 | 7,0 |
+| | Animationen | **66,2** | 0,6 | 29,7 | 29,6 |
+| | Logo | 41,1 | 0,3 | 21,4 | **57,0** |
+| | Icon | 9,7 | 0,0 | 24,1 | **46,2** |
+| <span style="color:#d6604d">Interaction</span> | Quiz (beliebig) | 22,7 | **78,3** | 28,3 | 43,0 |
+| | Text-Quiz | 9,7 | **70,0** | 4,9 | 15,6 |
+| | Auswahl-Quiz | 5,2 | 9,9 | 2,7 | **19,4** |
+| | Multiple Choice | 11,3 | 0,8 | 17,2 | **18,3** |
+| <span style="color:#4dac26">Reuse</span> | Makros | 69,0 | **99,7** | 52,6 | 58,6 |
+| | Imports | 57,4 | **98,3** | 31,7 | 45,7 |
+| | Externe Skripte | 16,2 | **96,3** | 31,8 | 25,8 |
+| <span style="color:#998ec3">Embedding</span> | Code-Blöcke | **82,5** | 9,3 | 53,7 | 28,5 |
+| | Mathematik | 30,7 | **95,2** | 21,4 | 32,8 |
+| | ASCII-Diagramme | **38,5** | 2,3 | 8,3 | 5,4 |
+| | HTML-Embeds | 20,4 | 5,9 | 20,5 | **39,2** |
+| | WebApps | 13,0 | 0,7 | 4,8 | **24,2** |
+| | Audio | **35,7** | 0,4 | 15,4 | 32,3 |
+
+*Angaben in Prozent · Auswahl mit Spannweite > 10 pp · Zeilenmaximum **fett***
 
 --{{0}}--
-Denn sobald man den Korpus nach Autorengruppen aufteilt, zerfällt das Bild.
-Jede Gruppe bewegt sich in ihrem eigenen Ausschnitt der Sprache.
+Hier sehen Sie dieselbe Information als Zahlen — die Features, bei denen sich
+die Gruppen um mehr als zehn Prozentpunkte unterscheiden. Lesen Sie die
+Tabelle zeilenweise: Der fette Wert zeigt, welche Gruppe ein Feature am
+stärksten nutzt. Und der springt munter zwischen den Spalten hin und her.
+Kein einziger Akteur führt durchgängig.
+
+--{{1}}--
+Drei Zeilen lohnen den genaueren Blick. Bei den externen Skripten steht
+MINT-the-GAP bei sechsundneunzig Prozent, alle anderen unter einem Drittel.
+Bei den Code-Blöcken führt das Entwicklerteam mit zweiundachtzig Prozent.
+Und bei WebApps liegt die Schule vorn — vor allen anderen. Genau diese drei
+Zeilen erzählen die Geschichte der nächsten Folien.
 
 ## Hochschule und Schule — gegenläufig
 
