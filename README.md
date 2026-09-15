@@ -721,17 +721,12 @@ das haben wir seit dem Sommer umgebaut.
 </div>
 </div>
 
-     {{1}}
-> [!IMPORTANT]
-> Erprobt u. a. an der **TU Berlin** (Universitätsbibliothek, Juli 2026) —
-> die Struktur ist eine **Neuentwicklung auf Basis dieser Ergebnisse**.
-
 --{{0}}--
 Und das ist keine Absichtserklärung. Unsere Workshops folgen seit dem Sommer
 einer neuen Struktur, die wir direkt aus diesen Ergebnissen entwickelt haben:
 vier Phasen statt einer Syntax-Tour. Erleben, Verstehen, Anwenden, Verbreiten.
-Auffällig ist die Gewichtung — fünfzig der hundertzwanzig Minuten entfallen
-allein auf das eigene Arbeiten.
+Auffällig ist die Gewichtung — rund fünfzig der hundertzwanzig Minuten
+entfallen allein auf das eigene Arbeiten.
 
 --{{1}}--
 Drei Befunde stecken direkt darin. Erstens: Man kann keine Merkmale wählen, die
@@ -740,7 +735,30 @@ als Lernender zu durchlaufen, nicht mit einer Feature-Liste. Zweitens: Die
 Community konsumiert Bausteine, definiert aber kaum eigene — deshalb starten
 die Teilnehmenden an einem Template mit einem zweiseitigen Spickzettel.
 Drittens: Das Veröffentlichen war die eigentliche Hürde — deshalb ist es jetzt
-eine eigene Phase mit direkter GitHub-Anbindung des Editors.
+eine eigene Phase.
+
+## Gleiche Struktur, getrennte Einstiege
+
+| | Schule (Mai 2026) | Hochschule (Juli 2026) |
+|---|---|---|
+| Phase 1 | Energiebegriff: Video, PhET-Simulation, drei Quizformate | Kurs im Bibliotheksalltag |
+| Phase 3 | Rohmaterial aus OPAL Schule → 15 Aufgaben | Literaturrecherche → 15 Aufgaben |
+| Phase 4 | zwei OPAL-Pfade (ZIP, SCORM) | GitHub-Anbindung des LiveEditors |
+
+     {{1}}
+> [!IMPORTANT]
+> Die Struktur ist eine **Neuentwicklung auf Basis dieser Ergebnisse** —
+> mit **getrennten Einstiegen** für Schule und Hochschule.
+
+--{{0}}--
+Und hier wird die Konsequenz aus den Leitern konkret: Die Choreografie ist
+dieselbe, aber sie ist kontextspezifisch gefüllt. Für Lehrkräfte an Schulen
+beginnt Phase eins mit dem Energiebegriff — Video, eine PhET-Simulation, drei
+Quizformate; das Rohmaterial stammt aus OPAL Schule, und das Verbreiten
+zielt auf die beiden OPAL-Pfade. An der Hochschule läuft dieselbe Phase über
+den Bibliotheksalltag und endet bei der GitHub-Anbindung des Editors. Gleiche
+Struktur, unterschiedlicher Einstieg — genau das, was die Adoption Ladders
+nahelegen.
 
 ## Zusammengefasst
 
