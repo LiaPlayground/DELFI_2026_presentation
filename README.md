@@ -395,30 +395,31 @@ Teile der Sprache seien tote Buchstaben, war unbegründet.
 --{{1}}--
 Die eigentliche Erkenntnis liegt woanders.
 
-## Häufig und selten genutzte Merkmale
+## Adoptionsraten über alle Kurse
 
 <!-- style="font-size: 0.8em" -->
-| Kategorie | Häufig genutzt | % | Selten genutzt | % |
+| Kategorie | Widely adopted | % | Rarely adopted | % |
 |---|---|---:|---|---:|
-| <span style="color:#4393c3">Presentation</span> | Narrator | 58,6 | Galerien | 7,3 |
-| | Animationen | 22,8 | Animated CSS | 0,7 |
-| | TTS-Fragmente | 11,6 | TTS-Blöcke | 0,1 |
-| | Anim.-Blöcke | 11,0 | Effekte | 0,0 |
-| <span style="color:#d6604d">Interaction</span> | Quiz (beliebig) | 45,5 | Single Choice | 9,0 |
-| | Text-Quiz | 28,8 | Auswahl-Quiz | 7,3 |
-| | Multiple Choice | 10,2 | Quiz-Hinweise | 4,9 |
-| | | | Aufgabenlisten | 4,7 |
-| | | | Umfragen | 2,7 |
-| | | | Matrix-Quiz | 1,6 |
-| <span style="color:#4dac26">Reuse</span> | Makros | 72,1 | Eigene Makros | 8,7 |
+| <span style="color:#4393c3">Presentation</span> | Narrator | 58,6 | Galleries | 7,3 |
+| | Animations | 22,8 | Animated CSS | 0,7 |
+| | TTS fragments | 11,6 | TTS blocks | 0,1 |
+| | Anim. blocks | 11,0 | Effects | 0,0 |
+| <span style="color:#d6604d">Interaction</span> | Any quiz | 45,5 | Single choice | 9,0 |
+| | Text quiz | 28,8 | Selection quiz | 7,3 |
+| | Multiple choice | 10,2 | Quiz hints | 4,9 |
+| | | | Task lists | 4,7 |
+| | | | Surveys | 2,7 |
+| | | | Matrix quiz | 1,6 |
+| <span style="color:#4dac26">Reuse</span> | Macros (any) | 72,1 | Custom macros | 8,7 |
 | | Imports | 59,6 | | |
-| | Externe Skripte | 51,1 | | |
-| <span style="color:#998ec3">Embedding</span> | Mathematik | 48,0 | ASCII-Diagramme | 9,8 |
-| | Script-Tags | 20,8 | WebApps | 5,6 |
-| | HTML-Embeds | 15,7 | Ausführbarer Code | 3,1 |
-| | | | Code-Projekte | 0,4 |
+| | Ext. scripts | 51,1 | | |
+| <span style="color:#998ec3">Embedding</span> | Math | 48,0 | ASCII diagrams | 9,8 |
+| | Script tags | 20,8 | WebApps | 5,6 |
+| | HTML embeds | 15,7 | Exec. code | 3,1 |
+| | | | Code projects | 0,4 |
 
-*Alle 3.317 Kurse · Trennlinie bei 10 %*
+*Adoptionsraten über alle 3.317 Kurse, je Kategorie nach Rate sortiert.
+Merkmale über 10 % links, darunter rechts. Auswahl aus 44 erhobenen Merkmalen.*
 
 --{{0}}--
 Hier die Aufteilung: links die Merkmale über zehn Prozent, rechts die
