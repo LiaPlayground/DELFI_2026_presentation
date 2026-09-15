@@ -372,8 +372,44 @@ intensiv es genutzt wird.
 
 # Teil 4 — Ergebnisse
 
+<div class="bigfact">
+<div class="num">89 %</div>
+<div class="cap">des Feature-Raums werden messbar genutzt</div>
+</div>
+
+     {{1}}
+Nur **5 von 44** Merkmalen bleiben unter 1 %:
+
+     {{1}}
+| Merkmal | Anteil |
+|---|---:|
+| Effects | 0,00 % |
+| Classroom | 0,03 % |
+| TTS blocks | 0,06 % |
+| Code projects | 0,42 % |
+| Animated CSS | 0,69 % |
+
+     {{2}}
+> [!NOTE]
+> Das Problem ist also **nicht**, dass Merkmale ungenutzt bleiben.
+
 --{{0}}--
 Kommen wir zu den Ergebnissen — und die erste Zahl hat uns selbst überrascht.
+Neunundachtzig Prozent des Merkmalsraums werden in messbarem Umfang
+eingesetzt. Unsere Sorge, große Teile der Sprache seien tote Buchstaben, war
+unbegründet.
+
+--{{1}}--
+Die Zahl kommt so zustande: Wir erheben vierundvierzig Merkmale, und nur
+fünf davon liegen unter einem Prozent — das sind diese hier. Bleiben
+neununddreißig, also knapp neunundachtzig Prozent. Die Ein-Prozent-Schwelle
+ist bewusst konservativ: Sie entspricht etwa dreiunddreißig von
+dreitausenddreihundert Kursen und markiert Merkmale, die praktisch nicht
+vorkommen — nicht solche, die bloß selten sind.
+
+--{{2}}--
+Das Problem liegt also nicht darin, dass Merkmale ungenutzt bleiben. Es liegt
+woanders — und das sehen Sie auf den nächsten Folien.
 
 ## Adoptionsraten über alle Kurse
 
@@ -405,10 +441,7 @@ Hier die Aufteilung: links die Merkmale über zehn Prozent, rechts die
 darunter. Jede Kategorie hat beide Seiten — es gibt keinen Bereich der
 Sprache, der komplett brachliegt, und keinen, der durchgängig genutzt wird.
 Makros, Imports und der Narrator führen das Feld an; ganz unten stehen
-Effekte und Code-Projekte. Die Ein-Prozent-Schwelle für „ungenutzt" haben
-wir bewusst konservativ gewählt: Ein Merkmal gilt erst dann als nicht
-adoptiert, wenn es in weniger als etwa dreiunddreißig von
-dreitausenddreihundert Kursen vorkommt.
+Effekte und Code-Projekte.
 
      {{0}}
 <span style="color:#4393c3">**Presentation**</span> — teilt sich scharf:
