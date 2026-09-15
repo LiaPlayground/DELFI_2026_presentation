@@ -327,6 +327,47 @@ sollten: Wir messen, ob ein Feature vorkommt — nicht, wie zentral es für den
 Kurs ist. Die Zahlen sagen also, wie weit ein Feature reicht, nicht wie
 intensiv es genutzt wird.
 
+## Kategorisierung der Kurse
+
+Nicht jede Gruppe von Autor:innen ist vergleichbar — wir trennen daher
+zuerst nach **Repository-Kontext**, dann nach **Bildungsstufe**:
+
+| Gruppe | Kurse | Accounts | Charakter |
+|---|---:|---:|---|
+| **Internal** | 462 | 7 | Kernteam: Templates, Demos, eigene Lehre |
+| **MINT-the-GAP** | 1.147 | 1 | Eine Schulinitiative, strukturierte MINT-Kurse |
+| **Comm-Uni** | 1.178 | 167 | Community, Hochschule — größte & vielfältigste Gruppe |
+| **Comm-School** | 186 | 38 | Community, Schule (Primar & Sekundar) |
+
+     {{1}}
+> [!NOTE]
+> **Warum trennen?** MINT-the-GAP stellt fast ein Drittel aller Kurse aus
+> **einem** Account — ohne Trennung würde diese Initiative jede Aussage
+> über „die Community" dominieren.
+
+     {{2}}
+> Weitere **344 Kurse** (Berufs-/Weiterbildung oder ohne klare Zuordnung)
+> bleiben außen vor → **2.973 Kurse** im Gruppenvergleich.
+
+--{{0}}--
+Bevor wir auf die Ergebnisse schauen, müssen wir eine Entscheidung erklären.
+Wir können nicht einfach über „die LiaScript-Community" sprechen, denn die
+Autor:innen haben sehr unterschiedliche Beziehungen zum Werkzeug. Deshalb
+trennen wir in zwei Schritten: zuerst nach Repository-Kontext — wer gehört
+zum Entwicklerteam, wer ist eine eigene Initiative — und innerhalb der
+übrigen Community nach Bildungsstufe, also Hochschule oder Schule.
+
+--{{1}}--
+Der wichtigste Grund steht hier: MINT-the-GAP ist ein einzelner Account mit
+über tausend Kursen, fast ein Drittel des Korpus. Würden wir das nicht
+heraustrennen, wäre jede Aussage über die Community in Wahrheit eine Aussage
+über dieses eine Projekt.
+
+--{{2}}--
+Und noch eine Ehrlichkeit: Dreihundertvierundvierzig Kurse lassen sich nicht
+eindeutig zuordnen — Berufsbildung, Weiterbildung, oder der Klassifikator war
+unsicher. Die lassen wir im Gruppenvergleich weg. So kommen wir von
+dreitausenddreihundert auf knapp dreitausend Kurse.
 
 # Teil 4 — Ergebnisse
 
