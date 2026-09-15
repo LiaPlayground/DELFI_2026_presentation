@@ -243,6 +243,32 @@ einen Preis — und der ist der Ausgangspunkt dieses Papers.
 
 ## Der Korpus
 
+> Für die Erfassung der Daten wurden die offenen LiaScript Materialsammlungen durchsucht.
+
+```mermaid @mermaid
+graph LR
+  A["Repository-Suche<br/>GitHub Search API<br/><b>1.076 Repos</b>"]
+  B["Datei-Extraktion<br/>Tree API + Heuristik<br/><b>57.096 Dateien</b>"]
+  C["Validierung<br/>Regeln + LLM<br/><b>3.317 Kurse</b><br/><i>5,8 % der Dateien</i>"]
+  D["Header-Metadaten<br/><b>99,4 % Abdeckung</b>"]
+  E["Feature-Erkennung<br/><b>44 Regex-Muster</b>"]
+  F["KI-Klassifikation<br/>llama3.3:70b<br/><b>Bildungsstufe</b>"]
+  G["Konsolidierung<br/><b>2.973 Kurse</b>"]
+
+  A --> B --> C
+  C --> D --> G
+  C --> E --> G
+  C --> F --> G
+
+  style A fill:#e3f0fa,stroke:#2E86AB
+  style B fill:#e3f0fa,stroke:#2E86AB
+  style C fill:#fdf0e0,stroke:#F18F01
+  style D fill:#e6f5f2,stroke:#1ABC9C
+  style E fill:#e6f5f2,stroke:#1ABC9C
+  style F fill:#f0e9f7,stroke:#9B59B6
+  style G fill:#eeeeee,stroke:#333
+```
+
 <div class="cols">
 <div>
 
@@ -269,59 +295,38 @@ weiter gewachsen.*
 </div>
 </div>
 
-     {{1}}
-Vier didaktisch motivierte Kategorien, **44 Features**:
-**Presentation** · **Interaction** · **Reuse** · **Embedding**
+## Kategoriesierung der Merkmale
 
---{{0}}--
-Wir haben gut dreitausend validierte Kurse von GitHub eingesammelt und jeden
-daraufhin untersucht, welche der vierundvierzig LiaScript-Features darin
-vorkommen. Eine wichtige Einschränkung gleich vorweg: Wir sehen, was
-Autor:innen einbauen — nicht, was Lernende davon tatsächlich nutzen.
+**44 binäre Merkmale**, erhoben über Muster im Markdown-Quelltext —
+gruppiert nach der **didaktischen Barriere**, die sie adressieren:
 
-## Die Verarbeitungskette
-
-```mermaid @mermaid
-graph LR
-  A["Repository-Suche<br/>GitHub Search API<br/><b>1.076 Repos</b>"]
-  B["Datei-Extraktion<br/>Tree API + Heuristik<br/><b>57.096 Dateien</b>"]
-  C["Validierung<br/>Regeln + LLM<br/><b>3.317 Kurse</b><br/><i>5,8 % der Dateien</i>"]
-  D["Header-Metadaten<br/><b>99,4 % Abdeckung</b>"]
-  E["Feature-Erkennung<br/><b>44 Regex-Muster</b>"]
-  F["KI-Klassifikation<br/>llama3.3:70b<br/><b>Bildungsstufe</b>"]
-  G["Konsolidierung<br/><b>2.973 Kurse</b>"]
-
-  A --> B --> C
-  C --> D --> G
-  C --> E --> G
-  C --> F --> G
-
-  style A fill:#e3f0fa,stroke:#2E86AB
-  style B fill:#e3f0fa,stroke:#2E86AB
-  style C fill:#fdf0e0,stroke:#F18F01
-  style D fill:#e6f5f2,stroke:#1ABC9C
-  style E fill:#e6f5f2,stroke:#1ABC9C
-  style F fill:#f0e9f7,stroke:#9B59B6
-  style G fill:#eeeeee,stroke:#333
-```
+| Kategorie | Entwurfsabsicht | Beispiele |
+|---|---|---|
+| <span style="color:#4393c3">**Presentation**</span> | Selbstgesteuert & barrierearm | Narrator (TTS), Animationen, Effekte, Galerien |
+| <span style="color:#d6604d">**Interaction**</span> | Aktives Lernen & Rückmeldung | Quiz-Typen, Texteingabe, Umfragen |
+| <span style="color:#4dac26">**Reuse**</span> | Skalierbares Autor:innenhandwerk | Imports, eigene Makros, Templates |
+| <span style="color:#998ec3">**Embedding**</span> | Ausführbare Umgebungen | Code-Ausführung, WebApps, Skripte |
 
      {{1}}
-> [!NOTE]
-> Von **57.096 Dateien** bleiben **3.317 Kurse** — und für den
-> Gruppenvergleich **2.973** mit eindeutiger Bildungsstufe.
+> [!WARNING]
+> Erfasst wird **Vorhandensein, nicht Zentralität**: Ein Kurs mit einem
+> einzigen Quiz zählt wie ein quizzentrierter Kurs.
 
 --{{0}}--
-Wie kommen wir zu diesen Zahlen? Wir starten mit einer Repository-Suche über
-die GitHub-API und ziehen daraus alle Markdown-Dateien — siebenundfünfzigtausend
-Kandidaten. Die Validierung ist der entscheidende Schritt: regelbasiert, wo die
-Indikatoren eindeutig sind, mit einem Sprachmodell dort, wo es unklar ist.
-Übrig bleiben dreitausenddreihundert echte Kurse, also knapp sechs Prozent.
+Die vierundvierzig Merkmale erheben wir über Mustererkennung im Quelltext.
+Entscheidend ist die Gruppierung: Wir sortieren nicht nach technischer
+Verwandtschaft, sondern danach, welche didaktische Hürde ein Feature abbaut.
+Presentation zielt auf Zugänglichkeit — Sprachausgabe etwa macht einen Kurs
+für Screenreader nutzbar. Interaction erlaubt Selbsttests ohne Lernplattform.
+Reuse überträgt das Don't-Repeat-Yourself-Prinzip auf Kurse. Und Embedding
+schließt die Lücke zwischen Erklärung und eigenem Ausprobieren.
 
 --{{1}}--
-Danach laufen drei Zweige parallel: Header-Metadaten, die Feature-Erkennung mit
-vierundvierzig Mustern, und eine KI-gestützte Einordnung der Bildungsstufe.
-Letztere ist die Grundlage für den Gruppenvergleich, den Sie gleich sehen —
-dafür bleiben knapp dreitausend Kurse mit eindeutiger Zuordnung.
+Eine Einschränkung, die Sie beim Lesen der Prozentwerte gleich mitdenken
+sollten: Wir messen, ob ein Feature vorkommt — nicht, wie zentral es für den
+Kurs ist. Die Zahlen sagen also, wie weit ein Feature reicht, nicht wie
+intensiv es genutzt wird.
+
 
 # Teil 4 — Ergebnisse
 
