@@ -114,8 +114,7 @@ Workshops gezogen haben.
 ## Was ist LiaScript?
 
 > [!TIP]
-> **LiaScript ist Markdown — erweitert um genau die Elemente, die für
-> interaktive Lehre fehlen. Dabei bleibt alles ein Text - den man beliebig verändern und kompieren kann.**
+> **LiaScript ist Markdown — erweitert um genau die Elemente, die für interaktive Lehre fehlen. Dabei bleibt alles ein Text - den man beliebig verändern und kopieren kann.**
 
 --{{0}}--
 Für alle, die LiaScript noch nicht kennen: Ein Kurs ist eine einzelne
