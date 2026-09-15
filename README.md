@@ -395,6 +395,44 @@ Teile der Sprache seien tote Buchstaben, war unbegründet.
 --{{1}}--
 Die eigentliche Erkenntnis liegt woanders.
 
+## Häufig und selten genutzte Merkmale
+
+<!-- style="font-size: 0.8em" -->
+| Kategorie | Häufig genutzt | % | Selten genutzt | % |
+|---|---|---:|---|---:|
+| <span style="color:#4393c3">Presentation</span> | Narrator | 58,6 | Galerien | 7,3 |
+| | Animationen | 22,8 | Animated CSS | 0,7 |
+| | TTS-Fragmente | 11,6 | TTS-Blöcke | 0,1 |
+| | Anim.-Blöcke | 11,0 | Effekte | 0,0 |
+| <span style="color:#d6604d">Interaction</span> | Quiz (beliebig) | 45,5 | Single Choice | 9,0 |
+| | Text-Quiz | 28,8 | Auswahl-Quiz | 7,3 |
+| | Multiple Choice | 10,2 | Quiz-Hinweise | 4,9 |
+| | | | Aufgabenlisten | 4,7 |
+| | | | Umfragen | 2,7 |
+| | | | Matrix-Quiz | 1,6 |
+| <span style="color:#4dac26">Reuse</span> | Makros | 72,1 | Eigene Makros | 8,7 |
+| | Imports | 59,6 | | |
+| | Externe Skripte | 51,1 | | |
+| <span style="color:#998ec3">Embedding</span> | Mathematik | 48,0 | ASCII-Diagramme | 9,8 |
+| | Script-Tags | 20,8 | WebApps | 5,6 |
+| | HTML-Embeds | 15,7 | Ausführbarer Code | 3,1 |
+| | | | Code-Projekte | 0,4 |
+
+*Alle 3.317 Kurse · Trennlinie bei 10 %*
+
+--{{0}}--
+Hier die Aufteilung: links die Merkmale über zehn Prozent, rechts die
+darunter. Jede Kategorie hat beide Seiten — es gibt keinen Bereich der
+Sprache, der komplett brachliegt, und keinen, der durchgängig genutzt wird.
+Makros, Imports und der Narrator führen das Feld an; ganz unten stehen
+Effekte und Code-Projekte.
+
+--{{1}}--
+Die Ein-Prozent-Schwelle für „ungenutzt" ist bewusst konservativ gewählt:
+Ein Merkmal gilt erst dann als nicht adoptiert, wenn es in weniger als
+etwa dreiunddreißig von dreitausenddreihundert Kursen vorkommt. Wir wollten
+die Zahl nicht schönrechnen.
+
 ## Vier Gruppen, vier Profile
 
 Sobald man den Korpus nach Autorengruppen aufteilt, zerfällt das
