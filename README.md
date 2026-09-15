@@ -14,6 +14,7 @@ comment:  Designed but Not Used? — Feature-Adoption in einem System ohne
 author:   Sebastian Zug, André Dietrich, Ines Aubel, Martin Lommatzsch, Volker Göhler
 
 import: https://raw.githubusercontent.com/LiaTemplates/LiveEdit-Embeddings/refs/tags/0.0.1/README.md
+import: https://raw.githubusercontent.com/LiaTemplates/mermaid_template/0.1.4/README.md
 
 persistent: true
 
@@ -280,7 +281,7 @@ Autor:innen einbauen — nicht, was Lernende davon tatsächlich nutzen.
 
 ## Die Verarbeitungskette
 
-```mermaid
+```mermaid @mermaid
 graph LR
   A["Repository-Suche<br/>GitHub Search API<br/><b>1.076 Repos</b>"]
   B["Datei-Extraktion<br/>Tree API + Heuristik<br/><b>57.096 Dateien</b>"]
