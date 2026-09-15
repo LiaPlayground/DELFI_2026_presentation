@@ -105,7 +105,7 @@ Dieser Foliensatz steht unter einer Creative-Commons-Lizenz (CC BY 4.0). Der Que
 --{{0}}--
 Herzlich willkommen. Diese Annotationen fassen die Erläuterungen im Zusammenhang mit der Vorstellung des Papers anlässlich der DELFI 2026 zusammen. Ausgehend vom 
 
-# Was ist LiaScript?
+## Was ist LiaScript?
 
 > [!TIP]
 > **LiaScript ist Markdown — erweitert um genau die Elemente, die für
@@ -154,7 +154,7 @@ Links der Quelltext, rechts das Ergebnis. Formatierung, Mathematik, Tabellen
 und Quizze — alles in einer Textdatei, alles sofort im Browser. Genau diese
 Bausteine sind es, deren Nutzung wir später vermessen.
 
-## Sovereignty by Design
+### Sovereignty by Design
 
 > [!IMPORTANT]
 > LiaScript Dokumente werden im Browser interpretiert - die Ausführungsumgebung läuft lokal. 
@@ -181,7 +181,7 @@ Das ist eine bewusste Designentscheidung: keine Server, keine Konten, keine
 Telemetrie. Für offene Bildungsressourcen ist das genau richtig. Aber es hat
 einen Preis — und der ist der Ausgangspunkt dieses Papers.
 
-## Die Community wächst ...
+### Die Community wächst ...
 
 ![Kumulierte Kurse und Autoren 2017–2026](img/growth.png)
 
@@ -192,7 +192,7 @@ einen Preis — und der ist der Ausgangspunkt dieses Papers.
 
 > __... und damit die Nachfrage nach Tutorials und Workshops.__
 
-# Das Problem
+## Das Problem
 
 > [!IMPORTANT]
 > **Wer ist eigentlich die Zielgruppe und welche Feature sollten dort fokussiert werden?**
@@ -222,7 +222,7 @@ einen Preis — und der ist der Ausgangspunkt dieses Papers.
 > [!TIP]
 > __Die Vermutung, dass unterschiedliche Anwendungskontexte eine verschiedene Nutzungsmuster zeigen ist offensichtlich, aber wie können wir das nachweisen?__
 
-# Methodik der Analyse
+## Methodik
 
 > [!IMPORTANT]
 > **Kurse liegen in öffentlichen Repositories. Das ist der einzige Kanal, über den wir Nutzung beobachten können.**
@@ -242,7 +242,7 @@ einen Preis — und der ist der Ausgangspunkt dieses Papers.
 > [!TIP]
 > Die manuelle Erfassung der Rückmeldungen der Nutzenden ist offenbar kein geeignetes Vorgehensmodell.
 
-## Der Korpus
+### Der Korpus
 
 > Für die Erfassung der Daten wurden die offenen LiaScript Materialsammlungen durchsucht.
 
@@ -296,7 +296,7 @@ weiter gewachsen.*
 </div>
 </div>
 
-## Inhalte der Kurse
+### Inhalte der Kurse
 
 Nicht jede Gruppe von Autor:innen ist vergleichbar — wir trennen daher
 zuerst nach **Repository-Kontext**, dann nach **Bildungsstufe**:
@@ -338,7 +338,7 @@ eindeutig zuordnen — Berufsbildung, Weiterbildung, oder der Klassifikator war
 unsicher. Die lassen wir im Gruppenvergleich weg. So kommen wir von
 dreitausenddreihundert auf knapp dreitausend Kurse.
 
-## Merkmalskategorisierung
+### Merkmalskategorisierung
 
 **44 binäre Merkmale**, erhoben über Muster im Markdown-Quelltext —
 gruppiert nach der **didaktischen Barriere**, die sie adressieren:
@@ -370,7 +370,7 @@ sollten: Wir messen, ob ein Feature vorkommt — nicht, wie zentral es für den
 Kurs ist. Die Zahlen sagen also, wie weit ein Feature reicht, nicht wie
 intensiv es genutzt wird.
 
-# Teil 4 — Ergebnisse
+## Analyse
 
 <div class="bigfact">
 <div class="num">89 %</div>
@@ -411,7 +411,7 @@ vorkommen — nicht solche, die bloß selten sind.
 Das Problem liegt also nicht darin, dass Merkmale ungenutzt bleiben. Es liegt
 woanders — und das sehen Sie auf den nächsten Folien.
 
-## Adoptionsraten über alle Kurse
+### Adoptionsraten über alle Kurse
 
 | Kategorie | Widely adopted | % | Rarely adopted | % |
 |---|---|---:|---|---:|
@@ -446,11 +446,11 @@ Effekte und Code-Projekte.
      {{0}}
 <span style="color:#4393c3">**Presentation**</span> — teilt sich scharf:
 Narrator und Animationen mit geringem Aufwand breit genutzt,
-die feingranularen Varianten nahe null.
+Text-to-Speach (TTS) scheint kaum Anwendungen zu finden.
 
      {{1}}
-<span style="color:#d6604d">**Interaction**</span> — von Quizzen dominiert
-(45,5 %); Umfragen und Matrix-Quiz bleiben selten.
+<span style="color:#d6604d">**Interaction**</span> — von einfachen Quizzen dominiert
+(45,5 %); komplexe Matrix-Quiz und Umfragen werden kaum genutzt..
 
      {{2}}
 <span style="color:#4dac26">**Reuse**</span> — getragen von Imports und Makros:
@@ -487,7 +487,7 @@ bewusst konservativ gewählt: Ein Merkmal gilt erst dann als nicht adoptiert,
 wenn es in weniger als etwa dreiunddreißig von dreitausenddreihundert Kursen
 vorkommt.
 
-## Adoptionsraten nach Gruppen
+### Adoptionsraten nach Gruppen
 
 Sobald man den Korpus nach Autorengruppen aufteilt, zerfällt das
 aggregierte Bild — **kein Akteur führt durchgängig**:
@@ -528,8 +528,6 @@ MINT-the-GAP bei sechsundneunzig Prozent, alle anderen unter einem Drittel.
 Bei den Code-Blöcken führt das Entwicklerteam mit zweiundachtzig Prozent.
 Und bei WebApps liegt die Schule vorn — vor allen anderen. Genau diese drei
 Zeilen erzählen die Geschichte der nächsten Folien.
-
-## Vier Profile, vier Handschriften
 
      {{0}}
 **Internal** — *Schaufenster*: führt bei code- und
@@ -585,26 +583,12 @@ Ihre Profile könnten unterschiedlicher kaum sein. Der Bildungskontext allein
 erklärt das also nicht. Was den Unterschied macht, ist die Infrastruktur,
 mit der die Autor:innen arbeiten.
 
-## Zwischenfrage
+## Ergebnisverwertung
 
-Welches Feature nutzen **Schul**-Autor:innen deutlich häufiger
-als Autor:innen an Hochschulen?
 
-[( )] Narrator
-[( )] Code-Blöcke
-[(X)] WebApps und visuelles Branding
-[( )] ASCII-Diagramme
-****************************************
 
-Schulische Kurse setzen auf **Medien und Gestaltung**,
-Hochschulkurse auf **narrativen Text und Code**.
 
-****************************************
-
---{{0}}--
-Kurze Zwischenfrage — was meinen Sie?
-
-## Ein Beispiel aus dem September
+## Zukünftige Herausforderungen
 
 <div class="cols">
 <div>
@@ -711,14 +695,60 @@ erreichen Code praktisch nie.
 --{{3}}--
 Das ist die zentrale Konsequenz: Ein einziger, linearer Einführungskurs geht an
 beiden Gruppen vorbei. Wir brauchen kontextspezifische Einstiege — und genau
-das ändern wir gerade an unseren Workshops.
+das haben wir seit dem Sommer umgebaut.
+
+## Umgesetzt: vier Phasen statt Syntax-Tour
+
+<div class="cols">
+<div>
+
+| Phase | Zeit | Idee |
+|---|---:|---|
+| **Erleben** | 20 min | Kurs aus **Lernendensicht** durchlaufen |
+| **Verstehen** | 15 min | Konzept statt Syntaxliste |
+| **Anwenden** | 50 min | Eigener Kurs im LiveEditor |
+| **Verbreiten** | 15 min | Teilen, Schwerpunkt GitHub |
+
+</div>
+<div>
+
+**Was die Studie dazu beigetragen hat**
+
+- *Awareness-Lücke* → Phase 1 zeigt Merkmale, **bevor** man sie auswählen muss
+- *Konsumieren statt Definieren* (8,7 %) → Template + Cheatsheet senken die Einstiegshürde
+- *Workflow-Barriere* → Phase 4 macht das Publizieren zum eigenen Schritt
+
+</div>
+</div>
+
+     {{1}}
+> [!IMPORTANT]
+> Erprobt u. a. an der **TU Berlin** (Universitätsbibliothek, Juli 2026) —
+> die Struktur ist eine **Neuentwicklung auf Basis dieser Ergebnisse**.
+
+--{{0}}--
+Und das ist keine Absichtserklärung. Unsere Workshops folgen seit dem Sommer
+einer neuen Struktur, die wir direkt aus diesen Ergebnissen entwickelt haben:
+vier Phasen statt einer Syntax-Tour. Erleben, Verstehen, Anwenden, Verbreiten.
+Auffällig ist die Gewichtung — fünfzig der hundertzwanzig Minuten entfallen
+allein auf das eigene Arbeiten.
+
+--{{1}}--
+Drei Befunde stecken direkt darin. Erstens: Man kann keine Merkmale wählen, die
+man nie gesehen hat — deshalb beginnt der Workshop damit, einen fertigen Kurs
+als Lernender zu durchlaufen, nicht mit einer Feature-Liste. Zweitens: Die
+Community konsumiert Bausteine, definiert aber kaum eigene — deshalb starten
+die Teilnehmenden an einem Template mit einem zweiseitigen Spickzettel.
+Drittens: Das Veröffentlichen war die eigentliche Hürde — deshalb ist es jetzt
+eine eigene Phase mit direkter GitHub-Anbindung des Editors.
 
 ## Zusammengefasst
 
 - **89 %** des Feature-Raums werden genutzt — das ist nicht das Problem
 - Jede Community erkundet nur **ihr eigenes Subset**
 - **Autoren-Infrastruktur** prägt Adoption so stark wie Didaktik
-- Onboarding braucht **kontextspezifische Einstiege**
+- Onboarding braucht **kontextspezifische Einstiege** —
+  seit Sommer 2026 in unseren Workshops umgesetzt
 
      {{1}}
 > Ein Korpus ist bei fehlender Telemetrie ein **tragfähiger Proxy** —
