@@ -583,125 +583,30 @@ Ihre Profile könnten unterschiedlicher kaum sein. Der Bildungskontext allein
 erklärt das also nicht. Was den Unterschied macht, ist die Infrastruktur,
 mit der die Autor:innen arbeiten.
 
-## Ergebnisverwertung
-
-
-
-
-## Zukünftige Herausforderungen
-
-<div class="cols">
-<div>
-
-Ein Grundschulkurs, Sachunterricht Klasse 4:
-
-- **24 Aufgaben**, 21 Quizze, 28 Bilder
-- kein Narrator, keine Makros, keine Imports
-- **35 MB Bilder** im Repository
-
-</div>
-<div>
-
-```markdown
-<!--
-author: Adrian Nemetschek
-language: de
--->
-```
-
-__Das ist der komplette Header.__
-
-</div>
-</div>
-
-     {{1}}
-> [!NOTE]
-> Die Hürde liegt **früher**, als wir dachten: nicht bei komplexen Features,
-> sondern beim Bildhandling.
-
---{{0}}--
-Wie das konkret aussieht, zeigt ein Kurs, der erst vor wenigen Tagen
-entstanden ist. Zwei Zeilen Konfiguration, vierundzwanzig Aufgaben, viele
-Bilder — und sonst nichts. Genau das Schulprofil aus der Tabelle.
-
---{{1}}--
-Bemerkenswert sind die fünfunddreißig Megabyte Bilder, davon der größte Teil
-gar nicht verwendet. Niemand hat dem Autor gesagt, dass man Bilder für das Web
-verkleinert. Das ist kein Vorwurf — das ist eine Lücke in unserem Onboarding.
-
-## Infrastruktur schlägt Didaktik
-
-Erinnern Sie sich an die blaue Fläche?
-
-<div class="cols">
-<div>
-
-> __MINT-the-GAP__
->
-> Ein Schulprojekt mit einheitlichem Template.
-
-</div>
-<div>
-
-Makros **99,7 %** · Imports **98,3 %**
-
-Narrator **9,4 %** · Animationen **0,6 %**
-
-</div>
-</div>
-
-     {{1}}
-> [!IMPORTANT]
-> Eine geteilte Konfiguration hebt alles **in ihrem Rahmen** —
-> und lässt alles außerhalb unberührt.
-
---{{0}}--
-Und hier kommt die blaue Fläche von vorhin zurück. Ein einzelnes Schulprojekt
-mit einem gemeinsamen Template. Die Features, die im Template stecken, liegen
-bei nahezu hundert Prozent. Alles andere bei fast null.
-
---{{1}}--
-Die Autoren dort haben keine didaktische Entscheidung gegen Sprachausgabe
-getroffen. Sie ist in ihrer Vorlage schlicht nicht vorgesehen. Infrastruktur
-prägt Adoption mindestens so stark wie Didaktik.
-
 ## Konsequenz für unsere Tutorials
+
+                  {{0}}
+***********************************************
 
 Die Gruppen steigen auf **unterschiedlichen Leitern** ein:
 
-     {{1}}
 **Hochschule:** Narrator → Code & Makros → *stockt bei Animationen*
-
-     {{2}}
 **Schule:** visuelle Medien → Quizze → *erreicht Code kaum*
 
-     {{3}}
 > [!IMPORTANT]
 > **Ein linearer Tutorial-Pfad ist deshalb falsch.**
 >
 > Onboarding muss dort ansetzen, wo die jeweilige Gruppe steht.
 
---{{0}}--
-Was heißt das nun für unsere eigene Arbeit?
+***********************************************
 
---{{1}}--
-Hochschulautoren beginnen bei Sprachausgabe und Text, gehen weiter zu Code und
-Makros — und bleiben bei Animationen stehen.
-
---{{2}}--
-Schulische Autoren starten bei Bildern und Medien, kommen über Quizze — und
-erreichen Code praktisch nie.
-
---{{3}}--
-Das ist die zentrale Konsequenz: Ein einziger, linearer Einführungskurs geht an
-beiden Gruppen vorbei. Wir brauchen kontextspezifische Einstiege — und genau
-das haben wir seit dem Sommer umgebaut.
-
-## Umgesetzt: vier Phasen statt Syntax-Tour
+                  {{1}}
+***********************************************
 
 <div class="cols">
 <div>
 
+<!-- data-type="none" -->
 | Phase | Zeit | Idee |
 |---|---:|---|
 | **Erleben** | 20 min | Kurs aus **Lernendensicht** durchlaufen |
@@ -721,44 +626,62 @@ das haben wir seit dem Sommer umgebaut.
 </div>
 </div>
 
---{{0}}--
-Und das ist keine Absichtserklärung. Unsere Workshops folgen seit dem Sommer
-einer neuen Struktur, die wir direkt aus diesen Ergebnissen entwickelt haben:
-vier Phasen statt einer Syntax-Tour. Erleben, Verstehen, Anwenden, Verbreiten.
-Auffällig ist die Gewichtung — rund fünfzig der hundertzwanzig Minuten
-entfallen allein auf das eigene Arbeiten.
-
---{{1}}--
-Drei Befunde stecken direkt darin. Erstens: Man kann keine Merkmale wählen, die
-man nie gesehen hat — deshalb beginnt der Workshop damit, einen fertigen Kurs
-als Lernender zu durchlaufen, nicht mit einer Feature-Liste. Zweitens: Die
-Community konsumiert Bausteine, definiert aber kaum eigene — deshalb starten
-die Teilnehmenden an einem Template mit einem zweiseitigen Spickzettel.
-Drittens: Das Veröffentlichen war die eigentliche Hürde — deshalb ist es jetzt
-eine eigene Phase.
-
-## Gleiche Struktur, getrennte Einstiege
-
-| | Schule (Mai 2026) | Hochschule (Juli 2026) |
-|---|---|---|
-| Phase 1 | Energiebegriff: Video, PhET-Simulation, drei Quizformate | Kurs im Bibliotheksalltag |
-| Phase 3 | Rohmaterial aus OPAL Schule → 15 Aufgaben | Literaturrecherche → 15 Aufgaben |
-| Phase 4 | zwei OPAL-Pfade (ZIP, SCORM) | GitHub-Anbindung des LiveEditors |
-
-     {{1}}
 > [!IMPORTANT]
 > Die Struktur ist eine **Neuentwicklung auf Basis dieser Ergebnisse** —
 > mit **getrennten Einstiegen** für Schule und Hochschule.
 
+***********************************************
+
+## Zukünftige Herausforderungen
+
+     {{0}}
+**1 · Vom Ergebnis zum Entstehungsprozess**
+Wir sehen heute nur den **Endstand** eines Kurses. Die Commit-Historie
+verrät, *wo* Autor:innen lange mit der Syntax gerungen haben — genau dort
+liegen die realen Hürden.
+
+     {{1}}
+**2 · Didaktische Absicht deklarieren statt erraten**
+Die Bildungsstufe ermitteln wir per KI-Klassifikation. Erweiterte
+**standardisierte Metadaten** würden die Zuordnung überflüssig machen —
+und wären zugleich für OER-Portale wertvoll.
+
+     {{2}}
+**3 · KI-generierte Inhalte mitdenken**
+Schreibt ein Agent den Kurs, misst die Merkmalsanalyse **dessen
+Konfiguration** — nicht mehr die didaktische Entscheidung einer Person.
+
+     {{3}}
+> [!WARNING]
+> Der MINT-the-GAP-Effekt im Großen: Ein Template prägte 1.147 Kurse.
+> Ein verbreiteter Agent prägt womöglich **alle**.
+
 --{{0}}--
-Und hier wird die Konsequenz aus den Leitern konkret: Die Choreografie ist
-dieselbe, aber sie ist kontextspezifisch gefüllt. Für Lehrkräfte an Schulen
-beginnt Phase eins mit dem Energiebegriff — Video, eine PhET-Simulation, drei
-Quizformate; das Rohmaterial stammt aus OPAL Schule, und das Verbreiten
-zielt auf die beiden OPAL-Pfade. An der Hochschule läuft dieselbe Phase über
-den Bibliotheksalltag und endet bei der GitHub-Anbindung des Editors. Gleiche
-Struktur, unterschiedlicher Einstieg — genau das, was die Adoption Ladders
-nahelegen.
+Zum Schluss drei Punkte, an denen wir weiterarbeiten. Der erste betrifft die
+Methodik selbst: Wir sehen immer nur den fertigen Kurs. Was wir nicht sehen,
+ist der Weg dorthin. Die Commit-Historie würde verraten, an welchen Stellen
+Autorinnen und Autoren lange gebraucht haben — und das sind die eigentlich
+interessanten Stellen für uns, weil dort die Hürden sitzen.
+
+--{{1}}--
+Zweitens: Wir ermitteln die Bildungsstufe mit einem Sprachmodell, weil die
+Information nirgends steht. Besser wäre, sie stünde einfach im Kurs. Erweiterte
+standardisierte Metadaten würden die Erkennung überflüssig machen — und sie
+hätten einen doppelten Nutzen, weil OER-Portale dieselbe Information brauchen.
+
+--{{2}}--
+Und drittens der Punkt, der unsere Methodik am stärksten herausfordert: Wenn
+ein KI-Agent den Kurs schreibt, dann messen wir nicht mehr, was eine Lehrkraft
+didaktisch entschieden hat. Wir messen, wie der Agent konfiguriert ist.
+
+--{{3}}--
+Das ist der MINT-the-GAP-Effekt im Großen. Dort hat ein Template über tausend
+Kurse geprägt — das konnten wir sauber heraustrennen. Ein weit verbreiteter
+Agent prägt möglicherweise alle Kurse gleichzeitig, und dann gibt es keine
+Vergleichsgruppe mehr. Umso wichtiger wird, dass wir die Unterstützung der
+Autor:innen aktiv gestalten, statt sie dem Zufall der Voreinstellungen zu
+überlassen.
+
 
 ## Zusammengefasst
 
