@@ -1,15 +1,15 @@
 <!--
-version:  2.0.0
+version:  2.1.0
 language: de
 
 narrator: Deutsch Female
 
 tags: Vortrag, DELFI, LiaScript, OER, Feature-Adoption, Korpusanalyse
 
-comment:  Designed but Not Used? — Feature-Adoption in einem System ohne
-          Telemetrie. Vortrag auf der DELFI 2026.
-          Vortragende: Sebastian Zug, André Dietrich, Ines Aubel
-          (TU Bergakademie Freiberg).
+comment:  Designed but Not Used? — Feature Adoption Analysis of
+          LiaScript Courses.
+          Vortrag auf der DELFI 2026.
+          Sprecher: Sebastian Zug (TU Bergakademie Freiberg)
 
 author:   Sebastian Zug, André Dietrich, Ines Aubel, Martin Lommatzsch, Volker Göhler
 
