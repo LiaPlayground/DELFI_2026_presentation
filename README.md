@@ -1,5 +1,5 @@
 <!--
-version:  1.0.0
+version:  2.0.0
 language: de
 
 narrator: Deutsch Female
@@ -734,7 +734,6 @@ Methodik: Der Korpus erfasst ausschließlich den Endstand eines Kurses. Die
 Commit-Historie würde zusätzlich sichtbar machen, an welchen Stellen
 Autorinnen und Autoren wiederholt nachgebessert haben — dort dürften die
 tatsächlichen syntaktischen Hürden liegen.
-
 Der zweite Punkt betrifft die Klassifikation. Die Bildungsstufe ermitteln wir
 gegenwärtig über ein Sprachmodell, weil die Information in den Dokumenten
 nicht deklariert ist. Erweiterte standardisierte Metadaten würden diesen
