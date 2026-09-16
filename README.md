@@ -465,7 +465,9 @@ der Verteilung ihrer Nutzung — wie die folgenden Auswertungen zeigen.
 *Je Kategorie nach Rate sortiert. Merkmale über 10 % links, darunter rechts.
 Auswahl aus 44 erhobenen Merkmalen, alle 3.317 Kurse.*
 
-     {{0}}
+     {{0-1}}
+*********************************************
+
 | <span style="color:#4393c3">Presentation</span> | % | Rarely adopted | % |
 |---|---:|---|---:|
 | Narrator | 58,6 | Galleries | 7,3 |
@@ -473,12 +475,15 @@ Auswahl aus 44 erhobenen Merkmalen, alle 3.317 Kurse.*
 | TTS fragments | 11,6 | TTS blocks | 0,1 |
 | Anim. blocks | 11,0 | Effects | 0,0 |
 
-     {{0}}
 <span style="color:#4393c3">**Presentation**</span> — teilt sich scharf:
 Narrator und Animationen mit geringem Aufwand breit genutzt,
 feingranulare Text-to-Speech-Varianten (TTS) dagegen kaum.
 
-     {{1}}
+*********************************************
+
+     {{1-2}}
+*********************************************
+
 | <span style="color:#d6604d">Interaction</span> | % | Rarely adopted | % |
 |---|---:|---|---:|
 | Any quiz | 45,5 | Single choice | 9,0 |
@@ -488,34 +493,42 @@ feingranulare Text-to-Speech-Varianten (TTS) dagegen kaum.
 | | | Surveys | 2,7 |
 | | | Matrix quiz | 1,6 |
 
-     {{1}}
 <span style="color:#d6604d">**Interaction**</span> — von einfachen Quizzen dominiert
 (45,5 %); komplexe Matrix-Quiz und Umfragen werden kaum genutzt.
 
-     {{2}}
+*********************************************
+
+     {{2-3}}
+*********************************************
+
 | <span style="color:#4dac26">Reuse</span> | % | Rarely adopted | % |
 |---|---:|---|---:|
 | Macros (any) | 72,1 | Custom macros | 8,7 |
 | Imports | 59,6 | | |
 | Ext. scripts | 51,1 | | |
 
-     {{2}}
 <span style="color:#4dac26">**Reuse**</span> — getragen von Imports und Makros:
 Die meisten Autor:innen **konsumieren** geteilte Bausteine,
 kaum jemand **definiert** eigene (8,7 %).
 
-     {{3}}
+*********************************************
+
+
+     {{3-4}}
+*********************************************
+
 | <span style="color:#998ec3">Embedding</span> | % | Rarely adopted | % |
 |---|---:|---|---:|
 | Math | 48,0 | ASCII diagrams | 9,8 |
 | Script tags | 20,8 | WebApps | 5,6 |
 | HTML embeds | 15,7 | Exec. code | 3,1 |
-| | | Code projects | 0,4 |
+| Code-Ausf. (ges.) | 13,4 | Code projects | 0,4 |
 
-     {{3}}
 <span style="color:#998ec3">**Embedding**</span> — streut am weitesten:
-Mathematik erreicht 48 %, doch ausführbarer Code (3,1 %) und
-Code-Projekte (0,4 %) bleiben Nische — obwohl sie ein Alleinstellungsmerkmal sind.
+Mathematik erreicht 48 %, Code-Ausführung insgesamt 13,4 % — getragen
+von **importierten Templates** (10,6 %), nicht von eigenem Code.
+
+*********************************************
 
 --{{0}}--
 Links stehen jeweils die Merkmale über zehn Prozent, rechts die darunter.
@@ -540,11 +553,20 @@ Unterstützung.
 
 --{{3}}--
 Die Kategorie Embedding weist die größte Spannweite auf: Mathematische
-Notation erreicht achtundvierzig Prozent, ausführbarer Code dagegen nur drei
-Prozent — obwohl gerade die Codeausführung im Browser ein Alleinstellungsmerkmal
-der Sprache darstellt.
+Notation erreicht achtundvierzig Prozent. Bei der Codeausführung lohnt ein
+genauer Blick, denn sie führt über drei Wege. Das Skript-Konstrukt mit
+At-Input erreicht drei Komma eins Prozent, Code-Projekte null Komma vier —
+der mit Abstand häufigste Weg sind aber importierte Templates wie Pyodide
+oder CodeRunner, die bei zehn Komma sechs Prozent liegen. Zusammengenommen
+machen dreizehn Komma vier Prozent aller Kurse Code ausführbar; von den
+Kursen, die überhaupt Code zeigen, ist es knapp ein Drittel. Das Muster ist
+dasselbe wie bei Reuse: Die Community nutzt fertige Bausteine, baut sie aber
+kaum selbst.
 
 ### Adoptionsraten nach Gruppen
+ 
+             {{0-1}}
+*********************************************
 
 Sobald man den Korpus nach Autorengruppen aufteilt, zerfällt das
 aggregierte Bild — **kein Akteur führt durchgängig**:
@@ -572,36 +594,36 @@ aggregierte Bild — **kein Akteur führt durchgängig**:
 
 *Angaben in Prozent · Auswahl mit Spannweite > 10 pp · Zeilenmaximum **fett***
 
+*********************************************
+
 --{{0}}--
 Hier sehen Sie dieselbe Information als Zahlen — die Features, bei denen sich
 die Gruppen um mehr als zehn Prozentpunkte unterscheiden. Lesen Sie die
 Tabelle zeilenweise: Der fette Wert zeigt, welche Gruppe ein Feature am
 stärksten nutzt. Dieses Maximum wechselt zeilenweise zwischen den Spalten —
 keine Gruppe führt durchgängig.
-
---{{1}}--
 Drei Zeilen lohnen den genaueren Blick. Bei den externen Skripten steht
 MINT-the-GAP bei sechsundneunzig Prozent, alle anderen unter einem Drittel.
 Bei den Code-Blöcken führt das Entwicklerteam mit zweiundachtzig Prozent.
 Und bei WebApps liegt die Schule vorn — vor allen anderen. Genau diese drei
 Zeilen erzählen die Geschichte der nächsten Folien.
 
-     {{0}}
+     {{1-5}}
 **Internal** — *Schaufenster*: führt bei code- und
 präsentationsnahen Merkmalen; die Entwickler demonstrieren die
 volle Sprachbreite.
 
-     {{1}}
+     {{2-5}}
 **MINT-the-GAP** — *Template-Werkstatt*: sättigt Reuse
 (Makros 99,7 %, Imports 98,3 %) für kleine, abgeschlossene MINT-Aufgaben.
 Alles außerhalb der Vorlage fehlt: Narrator 9,4 %, Animationen 0,6 %.
 
-     {{2}}
+     {{3-5}}
 **Comm-Uni** — *erzählend-textuell*: höchste Narrator-Quote (88,5 %),
 dazu Code-Blöcke und Tabellen — vorlesungsnahe, textstarke Inhalte
 mit wenig Multimedia.
 
-     {{3}}
+     {{4-5}}
 **Comm-School** — *multimedial-interaktiv*: genau umgekehrt —
 visuelles Branding, eingebettete Medien, Auswahl-Quizze.
 Engagement über Medienvielfalt statt über Code.
@@ -645,13 +667,8 @@ Autorenumgebung wirkt mindestens ebenso stark.
                   {{0}}
 ***********************************************
 
-Die Gruppen steigen auf **unterschiedlichen Leitern** ein:
-
-**Hochschule:** Narrator → Code & Makros → *stockt bei Animationen*
-**Schule:** visuelle Medien → Quizze → *erreicht Code kaum*
-
 > [!IMPORTANT]
-> **Ein linearer Tutorial-Pfad ist deshalb falsch.**
+> **Lehrende folgenen kontextspezifischen Pfaden - ein linearer Tutorial-Pfad ist deshalb falsch.**
 >
 > Onboarding muss dort ansetzen, wo die jeweilige Gruppe steht.
 
@@ -679,8 +696,8 @@ adressiert damit beide Gruppen nur unzureichend.
 | Phase | Zeit | Idee |
 |---|---:|---|
 | **Erleben** | 20 min | Kurs aus **Lernendensicht** durchlaufen |
-| **Verstehen** | 15 min | Konzept statt Syntaxliste |
-| **Anwenden** | 50 min | Eigener Kurs im LiveEditor |
+| **Verstehen** | 15 min | Konzepte hinter LiaScript |
+| **Anwenden** | 50 min | Eigener Kurs im LiveEditor **mit individuellen Syntaxelementen** |
 | **Verbreiten** | 15 min | Teilen, Schwerpunkt GitHub |
 
 </div>
