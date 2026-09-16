@@ -1,5 +1,5 @@
 <!--
-version:  2.1.0
+version:  2.2.0
 language: de
 
 narrator: Deutsch Female
@@ -405,7 +405,7 @@ gruppiert nach der **didaktischen Barriere**, die sie adressieren:
 
      {{1}}
 > [!WARNING]
-> Erfasst wird **Vorhandensein, nicht Zentralität**: Ein Kurs mit einem
+> Erfasst wird **Vorhandensein, nicht Anzahl**: Ein Kurs mit einem
 > einzigen Quiz zählt wie ein quizzentrierter Kurs.
 
 --{{0}}--
@@ -430,7 +430,6 @@ intensiv es genutzt wird.
 <div class="cap">des Feature-Raums werden messbar genutzt</div>
 </div>
 
-     {{1}}
 Nur **5 von 44** Merkmalen bleiben unter 1 %:
 
      {{1}}
@@ -450,8 +449,6 @@ Nur **5 von 44** Merkmalen bleiben unter 1 %:
 Der erste Befund betrifft die Breite der Adoption: Neunundachtzig Prozent des
 erhobenen Merkmalsraums werden in messbarem Umfang eingesetzt. Die Annahme,
 wesentliche Teile der Sprache blieben ungenutzt, bestätigt sich somit nicht.
-
---{{1}}--
 Die Zahl kommt so zustande: Wir erheben vierundvierzig Merkmale, und nur
 fünf davon liegen unter einem Prozent — das sind diese hier. Bleiben
 neununddreißig, also knapp neunundachtzig Prozent. Die Ein-Prozent-Schwelle
@@ -465,35 +462,16 @@ der Verteilung ihrer Nutzung — wie die folgenden Auswertungen zeigen.
 
 ### Adoptionsraten über alle Kurse
 
-| Kategorie | Widely adopted | % | Rarely adopted | % |
-|---|---|---:|---|---:|
-| <span style="color:#4393c3">Presentation</span> | Narrator | 58,6 | Galleries | 7,3 |
-| | Animations | 22,8 | Animated CSS | 0,7 |
-| | TTS fragments | 11,6 | TTS blocks | 0,1 |
-| | Anim. blocks | 11,0 | Effects | 0,0 |
-| <span style="color:#d6604d">Interaction</span> | Any quiz | 45,5 | Single choice | 9,0 |
-| | Text quiz | 28,8 | Selection quiz | 7,3 |
-| | Multiple choice | 10,2 | Quiz hints | 4,9 |
-| | | | Task lists | 4,7 |
-| | | | Surveys | 2,7 |
-| | | | Matrix quiz | 1,6 |
-| <span style="color:#4dac26">Reuse</span> | Macros (any) | 72,1 | Custom macros | 8,7 |
-| | Imports | 59,6 | | |
-| | Ext. scripts | 51,1 | | |
-| <span style="color:#998ec3">Embedding</span> | Math | 48,0 | ASCII diagrams | 9,8 |
-| | Script tags | 20,8 | WebApps | 5,6 |
-| | HTML embeds | 15,7 | Exec. code | 3,1 |
-| | | | Code projects | 0,4 |
+*Je Kategorie nach Rate sortiert. Merkmale über 10 % links, darunter rechts.
+Auswahl aus 44 erhobenen Merkmalen, alle 3.317 Kurse.*
 
-*Adoptionsraten über alle 3.317 Kurse, je Kategorie nach Rate sortiert.
-Merkmale über 10 % links, darunter rechts. Auswahl aus 44 erhobenen Merkmalen.*
-
---{{0}}--
-Hier die Aufteilung: links die Merkmale über zehn Prozent, rechts die
-darunter. Jede Kategorie hat beide Seiten — es gibt keinen Bereich der
-Sprache, der komplett brachliegt, und keinen, der durchgängig genutzt wird.
-Makros, Imports und der Narrator führen das Feld an; ganz unten stehen
-Effekte und Code-Projekte.
+     {{0}}
+| <span style="color:#4393c3">Presentation</span> | % | Rarely adopted | % |
+|---|---:|---|---:|
+| Narrator | 58,6 | Galleries | 7,3 |
+| Animations | 22,8 | Animated CSS | 0,7 |
+| TTS fragments | 11,6 | TTS blocks | 0,1 |
+| Anim. blocks | 11,0 | Effects | 0,0 |
 
      {{0}}
 <span style="color:#4393c3">**Presentation**</span> — teilt sich scharf:
@@ -501,8 +479,25 @@ Narrator und Animationen mit geringem Aufwand breit genutzt,
 feingranulare Text-to-Speech-Varianten (TTS) dagegen kaum.
 
      {{1}}
+| <span style="color:#d6604d">Interaction</span> | % | Rarely adopted | % |
+|---|---:|---|---:|
+| Any quiz | 45,5 | Single choice | 9,0 |
+| Text quiz | 28,8 | Selection quiz | 7,3 |
+| Multiple choice | 10,2 | Quiz hints | 4,9 |
+| | | Task lists | 4,7 |
+| | | Surveys | 2,7 |
+| | | Matrix quiz | 1,6 |
+
+     {{1}}
 <span style="color:#d6604d">**Interaction**</span> — von einfachen Quizzen dominiert
 (45,5 %); komplexe Matrix-Quiz und Umfragen werden kaum genutzt.
+
+     {{2}}
+| <span style="color:#4dac26">Reuse</span> | % | Rarely adopted | % |
+|---|---:|---|---:|
+| Macros (any) | 72,1 | Custom macros | 8,7 |
+| Imports | 59,6 | | |
+| Ext. scripts | 51,1 | | |
 
      {{2}}
 <span style="color:#4dac26">**Reuse**</span> — getragen von Imports und Makros:
@@ -510,16 +505,26 @@ Die meisten Autor:innen **konsumieren** geteilte Bausteine,
 kaum jemand **definiert** eigene (8,7 %).
 
      {{3}}
+| <span style="color:#998ec3">Embedding</span> | % | Rarely adopted | % |
+|---|---:|---|---:|
+| Math | 48,0 | ASCII diagrams | 9,8 |
+| Script tags | 20,8 | WebApps | 5,6 |
+| HTML embeds | 15,7 | Exec. code | 3,1 |
+| | | Code projects | 0,4 |
+
+     {{3}}
 <span style="color:#998ec3">**Embedding**</span> — streut am weitesten:
 Mathematik erreicht 48 %, doch ausführbarer Code (3,1 %) und
 Code-Projekte (0,4 %) bleiben Nische — obwohl sie ein Alleinstellungsmerkmal sind.
 
 --{{0}}--
-Jede Kategorie hat ihr eigenes Muster. Presentation teilt sich scharf: Was
-eine Zeile im Header kostet — der Narrator — nutzen fast sechzig Prozent.
-Die feineren Varianten derselben Technik, TTS-Blöcke etwa, liegen bei null
-Komma eins. Es ist nicht das Interesse, das fehlt, sondern die Sichtbarkeit
-der zweiten Stufe.
+Links stehen jeweils die Merkmale über zehn Prozent, rechts die darunter.
+Jede Kategorie hat beide Seiten — es gibt keinen Bereich der Sprache, der
+komplett brachliegt, und keinen, der durchgängig genutzt wird. Ich gehe die
+vier Kategorien einzeln durch. Presentation teilt sich scharf: Was eine Zeile
+im Header kostet — der Narrator — nutzen fast sechzig Prozent. Die feineren
+Varianten derselben Technik, TTS-Blöcke etwa, liegen bei null Komma eins. Es
+ist nicht das Interesse, das fehlt, sondern die Sichtbarkeit der zweiten Stufe.
 
 --{{1}}--
 In der Kategorie Interaction dominieren einfache Quizformate: Knapp die Hälfte
