@@ -103,13 +103,9 @@ Dieser Vortrag ist unter folgenden [Link](https://liascript.github.io/course/?ht
 Dieser Foliensatz steht unter einer Creative-Commons-Lizenz (CC BY 4.0). Der Quelltext liegt auf [GitHub](https://github.com/LiaPlayground/DELFI_2026_presentation).
 
 --{{0}}--
-Herzlich willkommen. Diese Annotationen fassen die Erläuterungen zur
-Vorstellung des Papers auf der DELFI 2026 zusammen. Der Vortrag gliedert sich
-in vier Teile: Zunächst stellen wir LiaScript und die Ausgangslage vor, dann
-das methodische Problem, das sich aus der bewussten Datensparsamkeit ergibt.
-Darauf folgen Korpusaufbau und Merkmalserhebung sowie die Ergebnisse. Den
-Abschluss bilden die Konsequenzen, die wir daraus für unsere eigenen
-Workshops gezogen haben.
+Der Vortrag gliedert sich in vier Teile: LiaScript und Ausgangslage, das
+methodische Problem der bewussten Datensparsamkeit, Korpusaufbau und
+Ergebnisse sowie die Konsequenzen für die eigene Workshopgestaltung.
 
 ## Was ist LiaScript?
 
@@ -162,11 +158,10 @@ A2B2 | c4c4c4B2c2 | d4B3BB4A4 | G8F8 | G4e4d4c2A2 | B8A8 | G8z8
 ````
 
 --{{0}}--
-Links sehen Sie den Quelltext, rechts das gerenderte Ergebnis; Änderungen
-links wirken unmittelbar. Das Beispiel zeigt vier Ebenen: Standard-Markdown,
-ein Quiz in LiaScript-Syntax, eine über ein Template eingebundene
-Notendarstellung und ein eingebettetes 3D-Modell. Genau solche Elemente sind
-die Merkmale, deren Verbreitung wir im Folgenden quantifizieren.
+Links der Quelltext, rechts das gerenderte Ergebnis. Das Beispiel zeigt vier
+Ebenen: Standard-Markdown, ein Quiz in LiaScript-Syntax, eine per Template
+eingebundene Notendarstellung und ein eingebettetes 3D-Modell. Die Verbreitung
+solcher Elemente wird im Folgenden quantifiziert.
 
 ### Sovereignty by Design
 
@@ -207,13 +202,11 @@ einen Preis — und der ist der Ausgangspunkt dieses Papers.
 > __... und damit die Nachfrage nach Tutorials und Workshops.__
 
 --{{0}}--
-Die Zahl öffentlich verfügbarer Kurse wächst seit 2017 kontinuierlich; im
-August 2026 sind es gut fünftausend Kurse in knapp dreihundert
-Repository-Accounts. Zwei Hinweise zur Lesart: Die blau markierte Fläche
-entfällt auf ein einzelnes Projekt, auf das wir später zurückkommen. Und das
-Jahr 2026 ist nur bis August erfasst. Mit der Verbreitung steigt zugleich die
-Nachfrage nach Einführungsveranstaltungen — womit sich die Frage stellt,
-woran wir deren Inhalte eigentlich ausrichten.
+Die Zahl öffentlich verfügbarer Kurse wächst seit 2017 kontinuierlich: im
+August 2026 gut fünftausend Kurse in knapp dreihundert Accounts. Die blau
+markierte Fläche entfällt auf ein einzelnes Projekt, 2026 ist nur bis August
+erfasst. Mit der Verbreitung steigt die Nachfrage nach
+Einführungsveranstaltungen.
 
 ## Das Problem
 
@@ -246,14 +239,11 @@ woran wir deren Inhalte eigentlich ausrichten.
 > __Die Vermutung, dass unterschiedliche Anwendungskontexte eine verschiedene Nutzungsmuster zeigen ist offensichtlich, aber wie können wir das nachweisen?__
 
 --{{0}}--
-Die beiden Beispiele stehen für sehr unterschiedliche Anwendungskontexte: ein
-Grundschulkurs zum Sachunterricht, der vorrangig mit Bildern und
-Auswahlaufgaben arbeitet, und ein Template für die wissenschaftliche
-Community, das typografische Möglichkeiten ausreizt. Beide nutzen dieselbe
-Sprache, aber erkennbar unterschiedliche Teilmengen ihrer Merkmale. Dass
-Anwendungskontexte zu verschiedenen Nutzungsmustern führen, ist insofern
-naheliegend. Offen ist, wie sich das belastbar nachweisen lässt — denn
-Rückmeldungen erreichen uns nur punktuell und unsystematisch.
+Die Beispiele stehen für unterschiedliche Anwendungskontexte: ein
+Grundschulkurs mit Bildern und Auswahlaufgaben, ein Template für die
+wissenschaftliche Community. Beide nutzen dieselbe Sprache, aber erkennbar
+unterschiedliche Teilmengen ihrer Merkmale. Offen bleibt der belastbare
+Nachweis, da Rückmeldungen nur unsystematisch vorliegen.
 
 ## Methodik
 
@@ -337,20 +327,12 @@ weiter gewachsen.*
 </div>
 
 --{{0}}--
-Die Aufbereitung erfolgt in vier Schritten. Eine Repository-Suche über die
-GitHub-API liefert gut tausend Kandidaten, aus denen rund
-siebenundfünfzigtausend Markdown-Dateien extrahiert werden. Die Validierung
-kombiniert regelbasierte Indikatoren mit einem Sprachmodell für die unklaren
-Fälle; es verbleiben dreitausenddreihundertsiebzehn Kurse, also knapp sechs
-Prozent der Dateien. Anschließend laufen drei Zweige parallel:
-Header-Metadaten, die Merkmalserkennung über Regex-Muster und eine
-KI-gestützte Einordnung der Bildungsstufe.
-Zwei Einschränkungen sind für die Interpretation wesentlich. Erstens beruht
-die Analyse auf dem Stand von März 2026; der Korpus ist seither gewachsen.
-Zweitens — und das ist die wichtigere Einschränkung — erfassen wir
-ausschließlich *author adoption*: welche Merkmale Autorinnen und Autoren in
-ihre Kurse aufnehmen. Über die tatsächliche Nutzung durch Lernende erlaubt
-der Korpus keine Aussage.
+Eine Repository-Suche liefert gut tausend Kandidaten mit rund
+siebenundfünfzigtausend Markdown-Dateien; nach regelbasierter und
+LLM-gestützter Validierung verbleiben dreitausenddreihundertsiebzehn Kurse.
+Zwei Einschränkungen: Die Analyse beruht auf dem Stand von März 2026, und
+erhoben wird ausschließlich *author adoption* — über die Nutzung durch
+Lernende erlaubt der Korpus keine Aussage.
 
 ### Inhalte der Kurse
 
@@ -375,15 +357,11 @@ zuerst nach **Repository-Kontext**, dann nach **Bildungsstufe**:
 > bleiben außen vor → **2.973 Kurse** im Gruppenvergleich.
 
 --{{0}}--
-Bevor wir auf die Ergebnisse schauen, müssen wir eine Entscheidung erklären.
-Wir können nicht einfach über „die LiaScript-Community" sprechen, denn die
-Autor:innen haben sehr unterschiedliche Beziehungen zum Werkzeug. Deshalb
-trennen wir in zwei Schritten: zuerst nach Repository-Kontext — wer gehört
-zum Entwicklerteam, wer ist eine eigene Initiative — und innerhalb der
-übrigen Community nach Bildungsstufe, also Hochschule oder Schule.
-Ausschlaggebend ist dabei MINT-the-GAP: ein einzelner Account mit über tausend
-Kursen und damit knapp einem Drittel des Korpus. Ohne diese Trennung wäre jede
-Aussage über die Community faktisch eine Aussage über dieses eine Projekt.
+Von „der LiaScript-Community" zu sprechen, wäre unzulässig. Die Segmentierung
+erfolgt zweistufig: nach Repository-Kontext und innerhalb der Community nach
+Bildungsstufe. Ausschlaggebend ist MINT-the-GAP mit über tausend Kursen —
+knapp einem Drittel des Korpus. Ohne diese Trennung beschriebe jede Aussage
+faktisch dieses eine Projekt.
 
 --{{2}}--
 Dreihundertvierundvierzig Kurse entfallen auf Berufs- und Weiterbildung oder
@@ -409,19 +387,16 @@ gruppiert nach der **didaktischen Barriere**, die sie adressieren:
 > einzigen Quiz zählt wie ein quizzentrierter Kurs.
 
 --{{0}}--
-Die vierundvierzig Merkmale erheben wir über Mustererkennung im Quelltext.
-Entscheidend ist die Gruppierung: Wir sortieren nicht nach technischer
-Verwandtschaft, sondern danach, welche didaktische Hürde ein Feature abbaut.
-Presentation zielt auf Zugänglichkeit — Sprachausgabe etwa macht einen Kurs
-für Screenreader nutzbar. Interaction erlaubt Selbsttests ohne Lernplattform.
-Reuse überträgt das Don't-Repeat-Yourself-Prinzip auf Kurse. Und Embedding
-schließt die Lücke zwischen Erklärung und eigenem Ausprobieren.
+Die vierundvierzig Merkmale werden über Mustererkennung im Quelltext erhoben.
+Die Gruppierung folgt nicht technischer Verwandtschaft, sondern der
+adressierten didaktischen Hürde: Presentation der Zugänglichkeit, Interaction
+dem Selbsttest ohne Lernplattform, Reuse dem Don't-Repeat-Yourself-Prinzip,
+Embedding dem eigenen Ausprobieren.
 
 --{{1}}--
-Eine Einschränkung, die Sie beim Lesen der Prozentwerte gleich mitdenken
-sollten: Wir messen, ob ein Feature vorkommt — nicht, wie zentral es für den
-Kurs ist. Die Zahlen sagen also, wie weit ein Feature reicht, nicht wie
-intensiv es genutzt wird.
+Eine Einschränkung zur Interpretation der Prozentwerte: Erhoben wird das
+Vorkommen eines Features, nicht seine Zentralität. Die Zahlen beschreiben die
+Reichweite eines Features, nicht die Intensität seiner Nutzung.
 
 ## Analyse
 
@@ -446,15 +421,11 @@ Nur **5 von 44** Merkmalen bleiben unter 1 %:
 > Das Problem ist also **nicht**, dass Merkmale ungenutzt bleiben.
 
 --{{0}}--
-Der erste Befund betrifft die Breite der Adoption: Neunundachtzig Prozent des
-erhobenen Merkmalsraums werden in messbarem Umfang eingesetzt. Die Annahme,
-wesentliche Teile der Sprache blieben ungenutzt, bestätigt sich somit nicht.
-Die Zahl kommt so zustande: Wir erheben vierundvierzig Merkmale, und nur
-fünf davon liegen unter einem Prozent — das sind diese hier. Bleiben
-neununddreißig, also knapp neunundachtzig Prozent. Die Ein-Prozent-Schwelle
-ist bewusst konservativ: Sie entspricht etwa dreiunddreißig von
-dreitausenddreihundert Kursen und markiert Merkmale, die praktisch nicht
-vorkommen — nicht solche, die bloß selten sind.
+Neunundachtzig Prozent des Merkmalsraums werden in messbarem Umfang
+eingesetzt; die Annahme ungenutzter Sprachteile bestätigt sich nicht. Von
+vierundvierzig Merkmalen liegen nur fünf unter einem Prozent. Die Schwelle
+ist bewusst konservativ und markiert praktisch nicht vorkommende Merkmale,
+nicht bloß seltene.
 
 --{{2}}--
 Die Herausforderung liegt demnach nicht in ungenutzten Merkmalen, sondern in
@@ -531,13 +502,10 @@ von **importierten Templates** (10,6 %), nicht von eigenem Code.
 *********************************************
 
 --{{0}}--
-Links stehen jeweils die Merkmale über zehn Prozent, rechts die darunter.
-Jede Kategorie hat beide Seiten — es gibt keinen Bereich der Sprache, der
-komplett brachliegt, und keinen, der durchgängig genutzt wird. Ich gehe die
-vier Kategorien einzeln durch. Presentation teilt sich scharf: Was eine Zeile
-im Header kostet — der Narrator — nutzen fast sechzig Prozent. Die feineren
-Varianten derselben Technik, TTS-Blöcke etwa, liegen bei null Komma eins. Es
-ist nicht das Interesse, das fehlt, sondern die Sichtbarkeit der zweiten Stufe.
+Links die Merkmale über zehn Prozent, rechts die darunter. Jede Kategorie hat
+beide Seiten. Presentation teilt sich scharf: Der Narrator, eine Zeile im
+Header, erreicht fast sechzig Prozent, die feineren TTS-Blöcke null Komma
+eins. Nicht das Interesse fehlt, sondern die Sichtbarkeit der zweiten Stufe.
 
 --{{1}}--
 In der Kategorie Interaction dominieren einfache Quizformate: Knapp die Hälfte
@@ -552,16 +520,11 @@ produziert sie aber kaum selbst — ein Ansatzpunkt für infrastrukturelle
 Unterstützung.
 
 --{{3}}--
-Die Kategorie Embedding weist die größte Spannweite auf: Mathematische
-Notation erreicht achtundvierzig Prozent. Bei der Codeausführung lohnt ein
-genauer Blick, denn sie führt über drei Wege. Das Skript-Konstrukt mit
-At-Input erreicht drei Komma eins Prozent, Code-Projekte null Komma vier —
-der mit Abstand häufigste Weg sind aber importierte Templates wie Pyodide
-oder CodeRunner, die bei zehn Komma sechs Prozent liegen. Zusammengenommen
-machen dreizehn Komma vier Prozent aller Kurse Code ausführbar; von den
-Kursen, die überhaupt Code zeigen, ist es knapp ein Drittel. Das Muster ist
-dasselbe wie bei Reuse: Die Community nutzt fertige Bausteine, baut sie aber
-kaum selbst.
+Embedding weist die größte Spannweite auf: Mathematik achtundvierzig Prozent.
+Codeausführung erfolgt über drei Wege — At-Input drei Komma eins Prozent,
+Code-Projekte null Komma vier, am häufigsten importierte Templates wie
+Pyodide mit zehn Komma sechs. Zusammen dreizehn Komma vier Prozent. Wie bei
+Reuse werden fertige Bausteine genutzt, kaum eigene erstellt.
 
 ### Adoptionsraten nach Gruppen
  
@@ -597,16 +560,11 @@ aggregierte Bild — **kein Akteur führt durchgängig**:
 *********************************************
 
 --{{0}}--
-Hier sehen Sie dieselbe Information als Zahlen — die Features, bei denen sich
-die Gruppen um mehr als zehn Prozentpunkte unterscheiden. Lesen Sie die
-Tabelle zeilenweise: Der fette Wert zeigt, welche Gruppe ein Feature am
-stärksten nutzt. Dieses Maximum wechselt zeilenweise zwischen den Spalten —
-keine Gruppe führt durchgängig.
-Drei Zeilen lohnen den genaueren Blick. Bei den externen Skripten steht
-MINT-the-GAP bei sechsundneunzig Prozent, alle anderen unter einem Drittel.
-Bei den Code-Blöcken führt das Entwicklerteam mit zweiundachtzig Prozent.
-Und bei WebApps liegt die Schule vorn — vor allen anderen. Genau diese drei
-Zeilen erzählen die Geschichte der nächsten Folien.
+Dargestellt sind Merkmale mit mehr als zehn Prozentpunkten Gruppenunterschied;
+der fette Wert markiert je Zeile das Maximum. Dieses wechselt zwischen den
+Spalten — keine Gruppe führt durchgängig. Drei Zeilen sind aufschlussreich:
+externe Skripte bei MINT-the-GAP mit sechsundneunzig Prozent, Code-Blöcke
+beim Entwicklerteam mit zweiundachtzig, WebApps im Schulkontext.
 
      {{1-5}}
 **Internal** — *Schaufenster*: führt bei code- und
@@ -673,16 +631,11 @@ Autorenumgebung wirkt mindestens ebenso stark.
 > Onboarding muss dort ansetzen, wo die jeweilige Gruppe steht.
 
 --{{0}}--
-Liest man die Gruppenprofile als geordnete Abfolgen, ergeben sich zwei
-unterschiedliche Einstiegspfade. Autorinnen und Autoren im Hochschulkontext
-beginnen bei Sprachausgabe und Text, erweitern um Code und Makros und
-erreichen aufwendigere Präsentationsmerkmale kaum. Im schulischen Kontext
-verläuft der Einstieg über visuelle Medien und Quizformate, während
-codeorientierte Merkmale nahezu unerreicht bleiben. Da sich die Profile
-innerhalb von Comm-Uni zwischen produktiven und gelegentlichen Autorinnen und
-Autoren kaum unterscheiden, spiegeln diese Grenzen den Anwendungskontext
-wider, nicht die Produktionsmenge. Ein einzelner linearer Einführungspfad
-adressiert damit beide Gruppen nur unzureichend.
+Die Gruppenprofile zeigen zwei Einstiegspfade: im Hochschulkontext über
+Sprachausgabe und Text hin zu Code und Makros, im Schulkontext über visuelle
+Medien und Quizformate bei nahezu unerreichten codeorientierten Merkmalen. Da
+produktive und gelegentliche Autor:innen ähnliche Profile aufweisen, spiegeln
+die Grenzen den Anwendungskontext, nicht die Produktionsmenge.
 
 ***********************************************
 
@@ -717,17 +670,12 @@ adressiert damit beide Gruppen nur unzureichend.
 > mit **getrennten Einstiegen** für Schule und Hochschule.
 
 --{{1}}--
-Aus diesen Beobachtungen haben wir unser Workshopkonzept neu entwickelt. Es
-gliedert sich in vier Phasen, wobei der überwiegende Zeitanteil auf das eigene
-Arbeiten entfällt. Drei Befunde sind unmittelbar eingeflossen. Erstens setzt
-Phase eins am Awareness-Problem an: Die Teilnehmenden durchlaufen zunächst
-einen fertigen Kurs aus der Perspektive Lernender, statt mit einer
-Merkmalsübersicht zu beginnen. Zweitens adressieren Arbeitsvorlage und
-Cheatsheet in Phase drei die Diskrepanz zwischen Konsumieren und Definieren.
-Drittens erhält das Veröffentlichen eine eigene Phase, da es sich als
-eigenständige Hürde erwiesen hat. Die Choreografie ist für beide Kontexte
-identisch, die inhaltliche Füllung jedoch getrennt: für den Schulkontext
-erprobt im Mai 2026, für den Hochschulkontext im Juli 2026.
+Das Workshopkonzept umfasst vier Phasen mit überwiegendem Anteil eigener
+Arbeit. Drei Befunde sind eingeflossen: Phase eins adressiert das
+Awareness-Problem durch Kursdurchlauf aus Lernendenperspektive, Phase drei die
+Diskrepanz zwischen Konsumieren und Definieren, und das Veröffentlichen
+erhält als eigenständige Hürde eine eigene Phase. Erprobt im Mai und Juli
+2026.
 
 ***********************************************
 
@@ -751,25 +699,12 @@ Schreibt ein Agent den Kurs, misst die Merkmalsanalyse **dessen Konfiguration** 
 > Ein verbreiteter Agent prägt womöglich **alle**.
 
 --{{0}}--
-Abschließend drei Punkte, an denen wir weiterarbeiten. Der erste betrifft die
-Methodik: Der Korpus erfasst ausschließlich den Endstand eines Kurses. Die
-Commit-Historie würde zusätzlich sichtbar machen, an welchen Stellen
-Autorinnen und Autoren wiederholt nachgebessert haben — dort dürften die
-tatsächlichen syntaktischen Hürden liegen.
-Der zweite Punkt betrifft die Klassifikation. Die Bildungsstufe ermitteln wir
-gegenwärtig über ein Sprachmodell, weil die Information in den Dokumenten
-nicht deklariert ist. Erweiterte standardisierte Metadaten würden diesen
-Zwischenschritt erübrigen und zugleich der Auffindbarkeit in OER-Portalen
-zugutekommen.
-Der dritte Punkt berührt die Aussagekraft der Methode selbst. Wenn Kurse
-zunehmend mit KI-Unterstützung entstehen, misst eine Merkmalsanalyse nicht
-mehr primär didaktische Entscheidungen einzelner Lehrender, sondern die
-Konfiguration des eingesetzten Agenten. Der in dieser Untersuchung
-beobachtete Template-Effekt liefert dafür eine Analogie: Eine gemeinsame
-Konfiguration prägte über tausend Kurse. Sie ließ sich hier isolieren, weil
-Vergleichsgruppen existierten. Bei breit eingesetzten Assistenzsystemen wäre
-diese Kontrolle nicht mehr ohne Weiteres gegeben — umso wichtiger wird es,
-deren Voreinstellungen bewusst zu gestalten.
+Drei offene Punkte. Der Korpus erfasst nur den Endstand; die Commit-Historie
+würde die syntaktischen Hürden sichtbar machen. Die Bildungsstufe erfordert
+derzeit ein Sprachmodell, das standardisierte Metadaten erübrigen würden.
+Drittens misst eine Merkmalsanalyse bei KI-gestützter Kurserstellung
+zunehmend die Konfiguration des Agenten — isolierbar nur, solange
+Vergleichsgruppen existieren.
 
 ## Zusammengefasst
 
@@ -781,16 +716,11 @@ deren Voreinstellungen bewusst zu gestalten.
   seit Sommer 2026 in unseren Workshops umgesetzt
 
 --{{0}}--
-Zusammengefasst: Die Breite der Adoption ist nicht das Problem —
-neunundachtzig Prozent des Merkmalsraums werden genutzt. Entscheidend ist,
-dass jede Autorengruppe nur einen Ausschnitt erschließt, und dass die
-Infrastruktur, mit der gearbeitet wird, diesen Ausschnitt mindestens so stark
-prägt wie die didaktische Zielstellung. Für die Gestaltung von
-Einführungsangeboten folgt daraus die Notwendigkeit kontextspezifischer
-Einstiege, die wir seit Sommer 2026 umsetzen. Methodisch zeigt die Arbeit,
-dass sich die Nutzung eines bewusst datensparsamen Systems über einen
-öffentlichen Korpus untersuchen lässt, ohne dessen Datensparsamkeit
-aufzugeben.
+Nicht die Breite der Adoption ist das Problem — neunundachtzig Prozent des
+Merkmalsraums werden genutzt. Entscheidend ist, dass jede Autorengruppe nur
+einen Ausschnitt erschließt und die eingesetzte Infrastruktur diesen
+mindestens so stark prägt wie die didaktische Zielstellung. Daraus folgt die
+Notwendigkeit kontextspezifischer Einstiege.
 
 {{1-2}}
 *************************************
