@@ -1,5 +1,5 @@
 <!--
-version:  2.3.0
+version:  2.4.0
 language: de
 
 narrator: Deutsch Female
@@ -166,7 +166,7 @@ solcher Elemente wird im Folgenden quantifiziert.
 ### Sovereignty by Design
 
 > [!IMPORTANT]
-> LiaScript Dokumente werden im Browser interpretiert - die Ausführungsumgebung läuft lokal. 
+> LiaScript Dokumente werden im Browser interpretiert - die Ausführungsumgebung läuft lokal.
 
 <div class="cols">
 <div>
@@ -186,9 +186,9 @@ solcher Elemente wird im Folgenden quantifiziert.
 </div>
 
 --{{0}}--
-Das ist eine bewusste Designentscheidung: keine Server, keine Konten, keine
-Telemetrie. Für offene Bildungsressourcen ist das genau richtig. Aber es hat
-einen Preis — und der ist der Ausgangspunkt dieses Papers.
+Die dezentrale Struktur von LiaScript ist eine bewusste Designentscheidung: keine Server, keine Konten, keine
+Telemetrie. Für offene Bildungsressourcen ist das genau richtig.
+Damit haben wir aber auch keinen Rückgriff auf Nutzungsverhalten und Nutzungsmuster.
 
 ### Die Community wächst ...
 
@@ -357,17 +357,18 @@ zuerst nach **Repository-Kontext**, dann nach **Bildungsstufe**:
 > bleiben außen vor → **2.973 Kurse** im Gruppenvergleich.
 
 --{{0}}--
-Von „der LiaScript-Community" zu sprechen, wäre unzulässig. Die Segmentierung
-erfolgt zweistufig: nach Repository-Kontext und innerhalb der Community nach
+Die LiaScript-Community zeigt sich ausgesprochen heterogen. Der
+Clusteringansatz, den wir für die Klassifikation gewählt haben, erfolgt
+zweistufig: nach Repository-Kontext und innerhalb der Community nach
 Bildungsstufe. Ausschlaggebend ist MINT-the-GAP mit über tausend Kursen —
 knapp einem Drittel des Korpus. Ohne diese Trennung beschriebe jede Aussage
 faktisch dieses eine Projekt.
 
 --{{2}}--
-Dreihundertvierundvierzig Kurse entfallen auf Berufs- und Weiterbildung oder
+344 Kurse entfallen auf Berufs- und Weiterbildung oder
 lassen sich nicht eindeutig zuordnen. Sie bleiben im Gruppenvergleich
-unberücksichtigt, sodass sich die Grundgesamtheit von dreitausenddreihundert
-auf zweitausendneunhundertdreiundsiebzig Kurse reduziert.
+unberücksichtigt, sodass sich die Grundgesamtheit von 3.317
+auf 2.973 Kurse reduziert.
 
 ### Merkmalskategorisierung
 
@@ -527,7 +528,7 @@ Pyodide mit zehn Komma sechs. Zusammen dreizehn Komma vier Prozent. Wie bei
 Reuse werden fertige Bausteine genutzt, kaum eigene erstellt.
 
 ### Adoptionsraten nach Gruppen
- 
+
              {{0-1}}
 *********************************************
 
@@ -626,7 +627,7 @@ Autorenumgebung wirkt mindestens ebenso stark.
 ***********************************************
 
 > [!IMPORTANT]
-> **Lehrende folgenen kontextspezifischen Pfaden - ein linearer Tutorial-Pfad ist deshalb falsch.**
+> **Lehrende folgen kontextspezifischen Pfaden - ein linearer Tutorial-Pfad ist deshalb falsch.**
 >
 > Onboarding muss dort ansetzen, wo die jeweilige Gruppe steht.
 
@@ -670,7 +671,7 @@ die Grenzen den Anwendungskontext, nicht die Produktionsmenge.
 > mit **getrennten Einstiegen** für Schule und Hochschule.
 
 --{{1}}--
-Das Workshopkonzept umfasst vier Phasen mit überwiegendem Anteil eigener
+Das Workshopkonzept umfasst seit Sommer 2026 vier Phasen mit überwiegendem Anteil eigener
 Arbeit. Drei Befunde sind eingeflossen: Phase eins adressiert das
 Awareness-Problem durch Kursdurchlauf aus Lernendenperspektive, Phase drei die
 Diskrepanz zwischen Konsumieren und Definieren, und das Veröffentlichen
@@ -681,17 +682,17 @@ erhält als eigenständige Hürde eine eigene Phase. Erprobt im Mai und Juli
 
 ## Zukünftige Herausforderungen
 
-**1 · Vom Ergebnis zum Entstehungsprozess**
-Wir sehen heute nur den **Endstand** eines Kurses. Die Commit-Historie
+**1 Vom Ergebnis zum Entstehungsprozess**
+Wir untersuchen heute nur den **"Endstand"** eines Kurses. Die Commit-Historie
 verrät, *wo* Autor:innen lange mit der Syntax gerungen haben — genau dort
 liegen die realen Hürden.
 
-**2 · Didaktische Absicht deklarieren statt erraten**
+**2 Didaktische Absicht deklarieren statt erraten**
 Die Bildungsstufe ermitteln wir per KI-Klassifikation. Erweiterte
 **standardisierte Metadaten** würden die Zuordnung überflüssig machen —
 und wären zugleich für OER-Portale wertvoll.
 
-**3 · KI-generierte Inhalte mitdenken**
+**3 KI-generierte Inhalte mitdenken**
 Schreibt ein Agent den Kurs, misst die Merkmalsanalyse **dessen Konfiguration** — nicht mehr die didaktische Entscheidung einer Person.
 
 > [!WARNING]
